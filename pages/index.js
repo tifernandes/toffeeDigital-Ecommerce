@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Index.module.css';
+import styles from '../styles/index.module.css';
 import Image from 'next/image';
 import Produtos from '../components/Produtos';
 
