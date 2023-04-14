@@ -1,0 +1,21 @@
+.container{ 
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.categorias {
+    width: 100%;
+    max-width: 1142px;
+    margin: 41px 0 72px 0;
+}
+
+.cts {
+    margin-top: 28px;
+    display: flex;
+    gap: 79px;
+}
