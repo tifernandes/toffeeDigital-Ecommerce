@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from '../styles/produto.module.css';
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Produto = () => {
   return (
     <div className={styles.container}>
+      <Head>
+          <title>The King of Boxes - Produto</title>
+      </Head>
       <div className={styles.imgPrd}>
         <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={612} height={612}/>
       </div>
