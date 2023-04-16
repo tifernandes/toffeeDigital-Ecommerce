@@ -9,6 +9,7 @@ const Produtos = () => {
         <h2>PRODUTOS</h2>
       </div>
       <div className={styles.produtos}>
+
         <div className={styles.produto}>
           <div className={styles.prdImg}>
             <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
@@ -18,6 +19,77 @@ const Produtos = () => {
             <p>Ref.: TKB-12345</p>
           </div>
         </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
+        <div className={styles.produto}>
+          <div className={styles.prdImg}>
+            <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+          </div>
+          <div className={styles.prdDesc}>
+            <h3>Nome produto</h3>
+            <p>Ref.: TKB-12345</p>
+          </div>
+        </div>
+
       </div>
     </div>
   );

@@ -12,14 +12,11 @@ const Header = () => {
       </div>
       <nav className={styles.menu}>
         <ul>
-          <li><a href="/">INÍCIO</a></li>
-          <li><a href="/produtos">PRODUTOS</a></li>
-          <li><a href="/contato">CONTATO</a></li>
+          <li><a href="/">Início</a></li>
+          <li><a href="/produtos">Produtos</a></li>
+          <li><a href="/contato">Contato</a></li>
         </ul>
       </nav>
-      <div className={styles.search}>
-
-      </div>
     </header>
   );
 };

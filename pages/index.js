@@ -11,7 +11,7 @@ const Home = () => {
           <title>The King of Boxes - Início</title>
       </Head>
       <div className={styles.slide}>
-        <Image className={styles.logoImg} src="/slide1.jpg" width={1440} height={448}/>
+        <Image className={styles.logoImg} src="/slide1.jpg" fill/>
       </div>
       <div className={styles.categorias}>
         <div className={styles.ctHeader}>

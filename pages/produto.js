@@ -10,7 +10,7 @@ const Produto = () => {
           <title>The King of Boxes - Produto</title>
       </Head>
       <div className={styles.imgPrd}>
-        <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={612} height={612}/>
+        <Image className={styles.logoImg} src="/produtos/TKB-0003.png" fill/>
       </div>
       <div className={styles.descPrd}>
         <div className={styles.infPrd}>

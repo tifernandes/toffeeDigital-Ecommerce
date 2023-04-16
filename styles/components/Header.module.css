@@ -28,3 +28,10 @@
 .search {
     width: 30px;
 }
+
+
+@media (max-width: 425px) {
+    .menu {
+        display: none;
+    }
+}
