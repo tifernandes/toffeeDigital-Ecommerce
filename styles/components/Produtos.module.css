@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .produtosTitle {
@@ -37,6 +38,11 @@
     gap: 23px;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.produtos a{
+    text-decoration: none;
+    color: unset;
 }
 
 @media (max-width: 1024px) {

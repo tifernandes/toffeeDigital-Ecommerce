@@ -12,13 +12,13 @@
 .imgPrd {
     width: 100%;
     max-width: 633px;
-    min-height: 400px;
     position: relative;
     background: #FFFFFF;
     border: 1px solid #DEE2E6;
 }
 
 .descPrd {
+    max-width: 520px;
     display: flex;
     flex-direction: column;
 }
@@ -87,10 +87,6 @@
         padding-top: 60px;
         flex-direction: column;
         align-items: center;
-    }
-
-    .imgPrd {
-        min-height: 633px;
     }
 
     .descPrd {
