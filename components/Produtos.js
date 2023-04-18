@@ -17,7 +17,14 @@ const Produtos = () => {
             <Link href={'/produto?i=' + prd.Id}>
               <div className={styles.produto}>
                 <div className={styles.prdImg}>
-                  <Image className={styles.logoImg} src="/produtos/TKB-0003.png" width={244} height={244}/>
+                  {prd.imgs && 
+                    <Image 
+                    className={styles.logoImg} 
+                    src={'/produtos/' + prd.Id + '/' + prd.imgs[0]} 
+                    layout='responsive'
+                    width={1000}
+                    height={1000}/>
+                  }
                 </div>
                 <div className={styles.prdDesc}>
                   <h3>{prd.produto}</h3>

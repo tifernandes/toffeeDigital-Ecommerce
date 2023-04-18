@@ -5,7 +5,8 @@ const produtos = [
     descricao: 'Um case para proteção e exposição de miniaturas 1:64. Ideal para miniaturas customizadas ou sem embalagem.',
     medidas: '5,3x5,7x10,6 cm',
     cores: 'Base e suporte preto, tampa transparente',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0008.png', 'IMG_0073.png']
 },
 {
     Id: 'TKB-0003-1',
@@ -13,7 +14,8 @@ const produtos = [
     descricao: 'Um expositor com tampa para proteção e exposição de miniaturas 1:64, que é modular pois possui encaixes na lateral esquerda e na parte superior para montar uma peça na outra, e pode ser utilizado para organização em geral. O produto possui 05 nichos (cabem até 05 miniaturas 1:64 por produto). Este produto possui também 01 alojamento para parafusos que permite a fixação em paredes. OBS: não acompanha parafuso e bucha.',
     medidas: '4,7x10,1x22,8 cm',
     cores: 'Transparente',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0052-(2).png', 'IMG_0073.png']
 },
 {
     Id: 'TKB-0003-2',
@@ -21,7 +23,8 @@ const produtos = [
     descricao: 'Um expositor com tampa para proteção e exposição de miniaturas 1:64, que é modular pois possui encaixes na lateral esquerda e na parte superior para montar uma peça na outra, e pode ser utilizado para organização em geral. O produto possui 05 nichos (cabem até 05 miniaturas 1:64 por produto). Este produto acompanha uma base para encaixar em baixo do expositor, podendo assim deixar em cima de superficies planas.',
     medidas: 'Expositor: 4,7x10,1x22,8 cm; Base: 1,2x7,4x7,1 cm',
     cores: 'Transparente',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0047-(2).png', 'IMG_0043semtrava.png']
 },
 {
     Id: 'TKB-0005',
@@ -29,7 +32,8 @@ const produtos = [
     descricao: 'Um expositor com tampa e divisórias moveis para proteção e exposição de até 18 miniaturas 1:64. Este produto possui alojamentos para parafusos o que permite a fixação do mesmo em paredes. OBS: Não acompanha parafuso e bucha. Ele também pode ser utilizado para organização em geral.',
     medidas: '8,5x16,8x30,8 cm',
     cores: 'Transparente',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0029.png', 'IMG_0043-(2).png']
 },
 {
     Id: 'TKB-0006',
@@ -37,7 +41,8 @@ const produtos = [
     descricao: 'Um expositor com tampa e divisórias moveis para proteção e exposição de miniaturas 1:64, miniaturas 1:43, Funko Pop, entre outros. Este produto possui alojamentos para parafusos o que permite a fixação do mesmo em paredes. OBS: Não acompanha parafuso e bucha. Ele também pode ser utilizado para organização em geral.',
     medidas: '8,5x16,8x30,8 cm',
     cores: 'Transparente',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0058.png', 'IMG_0058-(2).png', 'IMG_0045.png']
 },
 {
     Id: 'TKB-0007',
@@ -45,7 +50,8 @@ const produtos = [
     descricao: 'Rampa para exposição de miniaturas 1:64. Cada embalagem vem com 04 unidades.',
     medidas: '1,9x3,4x8,0 cm',
     cores: 'Preto',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0018.png', 'IMG_0112.png']
 },
 {
     Id: 'TKB-0008',
@@ -53,7 +59,8 @@ const produtos = [
     descricao: 'Uma caixa para organização ou embalagem de itens pequenos.',
     medidas: '2,0x5,5x5,7 cm',
     cores: 'Translucido',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0082-(2).png']
 },
 {
     Id: 'TKB-0009-1',
@@ -61,7 +68,8 @@ const produtos = [
     descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
     medidas: '5,1x5,3x8,4 cm',
     cores: 'Preto',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0075.png', 'IMG_0145.png']
 },
 {
     Id: 'TKB-0009-2',
@@ -69,7 +77,8 @@ const produtos = [
     descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
     medidas: '5,1x5,3x8,4 cm',
     cores: 'Vermelho',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0052-(2).png', 'IMG_0073.png']
 },
 {
     Id: 'TKB-0009-X',
@@ -77,7 +86,8 @@ const produtos = [
     descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
     medidas: '5,1x5,3x8,4 cm',
     cores: 'Preto e Vermelho',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0052-(2).png', 'IMG_0073.png']
 },
 {
     Id: 'TKB-0010',
@@ -85,7 +95,8 @@ const produtos = [
     descricao: 'Expositor prateleira arquibancada com 05 andares. O produto é enviado desmontado. Os parafusos acompanham na embalagem.',
     medidas: '16,4x33,1x32,8 cm',
     cores: 'Laterais transparentes e prateleiras em preto',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0002.png', 'IMG_0001.png']
 },
 {
     Id: 'TKB-0011',
@@ -93,14 +104,16 @@ const produtos = [
     descricao: 'Expositor prateleira arquibancada com 04 andares. O produto é enviado desmontado. Os parafusos acompanham na embalagem.',
     medidas: '12,6x33,1x26,3 cm',
     cores: 'Laterais transparentes e prateleiras em preto',
-    itens: 'Não informado'
+    itens: 'Não informado',
+    imgs: ['IMG_0003.png', 'IMG_0004-(2).png']
 },
 {    
     Id: 'TKB-0012',    
     produto: 'Prateleira arquibancada com 3 andares',    
     descricao: 'Expositor prateleira arquibancada com 03 andares. O produto é enviado desmontado. Os parafusos acompanham na embalagem.',    medidas: '8,9x33,1x19,8 cm',    cores: 'As laterais são transparentes e as prateleiras em preto.',    itens: ''  },  {    Id: 'TKB-0013',    produto: 'Cone',    descricao: 'Cone para miniaturas, dioramas e maquetes. Cada embalagem vem com 10 unidades.',    medidas: '1,2x1,2x1,2 cm',    cores: 'Laranja.',    itens: ''  },  {    Id: 'TKB-0014-1',    produto: 'Prancha de Surf',    descricao: 'Prancha de surf para miniaturas, dioramas e maquetes. Cada embalagem vem com 06 unidades, sendo 02 de cada tamanho.',    medidas: [      { tamanho: 'P', medida: '0,4x0,7x3,2 cm' },      { tamanho: 'M', medida: '0,5x0,8x4,0 cm' },      { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }    ],
     cores: 'Preto.',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0005.png', 'IMG_0006.png']
 },
 {
     Id: 'TKB-0014-2',
@@ -112,7 +125,8 @@ const produtos = [
     { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }
     ],
     cores: 'Branco.',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0031.png', 'IMG_0210.png', 'IMG_0213.png']
 },
 {
     Id: 'TKB-0014-3',
@@ -124,7 +138,8 @@ const produtos = [
     { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }
     ],
     cores: 'Laranja.',
-    itens: ''
+    itens: '',
+    imgs: ['IMG_0031.png', 'IMG_0210.png', 'IMG_0213.png']
 },
 {
     Id: 'TKB-0015-1',
@@ -132,7 +147,8 @@ const produtos = [
     descricao: 'Rodas com pneus em borracha para customização de miniaturas 1:64.',
     medidas: 'Ø 1,1 cm',
     cores: '',
-    itens: ''
+    itens: '',
+    imgs: ['TKB-0015-1.png', 'TKB-0015-2.png']
     },
 {
     Id: 'TKB-0016',
@@ -144,6 +160,7 @@ const produtos = [
     },
     cores: ['Transparente'],
     itens: [],
+    imgs: ['IMG_0060-(2).png', 'IMG_0027.png']
 },
 {
     Id: 'TKB-0017',
@@ -156,6 +173,7 @@ const produtos = [
     },
     cores: ['Transparente'],
     itens: [],
+    imgs: ['IMG_0072.png', 'IMG_0044.png']
 },
 {
     Id: 'TKB-0018',
@@ -167,6 +185,7 @@ const produtos = [
     },
     cores: ['Transparente', 'Preta'],
     itens: ['Base com furações'],
+    imgs: ['IMG_0030-(2).png', 'IMG_0029-(2).png']
 },
 {
     Id: 'TKB-0019',
@@ -178,6 +197,7 @@ const produtos = [
     },
     cores: ['Transparente', 'Preta'],
     itens: ['Base com furações'],
+    imgs: ['IMG_0032-(2).png', 'IMG_0035-(2).png']
 },
 {
     Id: 'TKB-0020',
@@ -189,6 +209,7 @@ const produtos = [
     },
     cores: ['Transparente'],
     itens: [],
+    imgs: ['IMG_0109.png', 'IMG_0035.png']
 },
 {
     Id: "TKB-0021",
@@ -196,7 +217,8 @@ const produtos = [
     descricao: "Um protetor de cartelas para miniaturas 1:64 para as marcas: Hotwheels, Matchbox e California minis",
     medidas: "19,8x 11,8x4,5 cm",
     cores: "Transparente",
-    itensInclusos: ""
+    itensInclusos: "",
+    imgs: ['IMG_0040.png', 'IMG_0004.png']
 },
 {
     Id: "TKB-0022",
@@ -204,7 +226,8 @@ const produtos = [
     descricao: "Um case para proteção e exposição de miniaturas 1:64. Ideal para miniaturas customizadas ou sem embalagem. Este produto pode ser utilizado também para organização e embalagem de peças pequenas.",
     medidas: "Com o pendurador aberto (AxLxC): 3,3x4,3x9,9 cm / Com o pendurador dobrado (AxLxC): 3,3x4,3x8,7 cm",
     cores: "Translucido",
-    itensInclusos: ""
+    itensInclusos: "",
+    imgs: ['tkb-0022a.png', 'tkb-0022.png']
 },
 {
     Id: "TKB-0023-1",
@@ -212,7 +235,8 @@ const produtos = [
     descricao: "Um expositor com 30 nichos fechados e individuais",
     medidas: "46,3x31,0x4,6 cm",
     cores: "O nicho é transparente e o porta nicho é branco",
-    itensInclusos: ""
+    itensInclusos: "",
+    imgs: ['TKB-0023-1t.png', 'TKB-0023-1.png']
 },
 {
     Id: "TKB-0023-2",
@@ -220,7 +244,8 @@ const produtos = [
     descricao: "Um expositor com 30 nichos abertos e individuais",
     medidas: "46,3x31,0x5,4 cm",
     cores: "O nicho é preto e o porta nicho é branco",
-    itensInclusos: ""
+    itensInclusos: "",
+    imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png']
 },
 {
     Id: "TKB-0024",
@@ -228,7 +253,8 @@ const produtos = [
     descricao: "Um case para proteção e exposição de miniaturas 1/43 e 1/32. Ideal para miniaturas customizadas ou sem embalagem.",
     medidas: "7,1x7,9x15,4 cm",
     cores: "A base e os suportes da miniatura são em preto e a tampa é transparente",
-    itensInclusos: ""
+    itensInclusos: "",
+    imgs: ['IMG_0064.png', 'IMG_0059.png']
 }
 ];
 

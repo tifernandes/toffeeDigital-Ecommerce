@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -27,6 +27,16 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.prdImg {
+    max-width: 200px;
+    max-height: 220px;
+    position: relative;
+}
+
+.logoImg {
+    height: 100% !important;
 }
 
 .produtosTitle {

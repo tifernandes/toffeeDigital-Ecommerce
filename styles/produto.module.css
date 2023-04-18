@@ -10,11 +10,14 @@
 }
 
 .imgPrd {
-    width: 100%;
     max-width: 633px;
+    max-height: 633px;
     position: relative;
     background: #FFFFFF;
     border: 1px solid #DEE2E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .descPrd {
@@ -25,7 +28,7 @@
 
 .divsorPrd {
     width: 100%;
-    height: 5px;
+    height: 2px;
     background: #01305E;
     margin: 32px 0;
 }
@@ -38,7 +41,7 @@
 
 .contactPrd h1{
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #000000;
 }
@@ -49,6 +52,10 @@
     gap: 14px;
     margin-top: 28px;
     width: 100%;
+}
+
+.btsPrd a{
+    text-decoration: none;
 }
 
 .btsPrd button{
@@ -63,6 +70,11 @@
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+}
+
+.logoImg {
+    width: 50% !important;
+    height: 100% !important;
 }
 
 .infPrd p{
