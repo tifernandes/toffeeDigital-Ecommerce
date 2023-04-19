@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from'../styles/components/Header.module.css';
 import Image from 'next/image'
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import CallIcon from '@mui/icons-material/Call';
+import Button from '@mui/material/Button';
 
 const Header = () => {
+
+  const [menuMbOpen, setMenuMbOpen] = useState(false);
 
   useEffect(() => {
     window.onscroll = function() {
@@ -18,20 +21,54 @@ const Header = () => {
     };
   }, []);
 
-  const HeaderCmp = () => {
+  const onClick = () => {
+    setMenuMbOpen(!menuMbOpen);
+
+    if(menuMbOpen){
+      document.getElementById("menuMbShow").style.transform = "translateY(70px)";
+    }else {
+      document.getElementById("menuMbShow").style.transform = "translateY(-100px)";
+    }
+  }
+
+  const NavCmp = () => {
+    return(
+      <>
+        <ul>
+          <li><a href="/"><HomeIcon/> Início</a></li>
+          <li><a href="/produtos"><ShoppingBagIcon/> Produtos</a></li>
+          <li><a href="/contato"><CallIcon/> Contato</a></li>
+        </ul>
+      </>
+    )
+  }
+
+  const HeaderCmp = (props) => {
+
+    console.log('props')
+    console.log(props.hideMenu)
+
+    const hideMenu = props.hideMenu
+
     return (
       <>
         <div className={styles.logo}>
           <a href="/">
-            <Image className={styles.logoImg} src="/logo.png" width={137} height={61}/>
+            <Image className={styles.logoImg} alt='logo' src="/logo.png" width={137} height={61}/>
           </a>
         </div>
         <nav className={styles.menu}>
-          <ul>
-            <li><a href="/"><HomeIcon/> Início</a></li>
-            <li><a href="/produtos"><ShoppingBagIcon/> Produtos</a></li>
-            <li><a href="/contato"><CallIcon/> Contato</a></li>
-          </ul>
+          <NavCmp />
+        </nav>
+        <nav className={styles.menuMobile}>
+          {/* <div className={styles.menuMbBt}>
+            <Button variant="text" onClick={onClick}>{menuMbOpen ? 'Menu' : 'Fechar'}</Button>
+          </div> */}
+          {!hideMenu && 
+            <div className={styles.menuMbShow} id="menuMbShow">
+              <NavCmp />
+            </div>
+          }
         </nav>
       </>
     )
@@ -40,7 +77,7 @@ const Header = () => {
   return (
     <>
     <header className={styles.container} id="container">
-      <HeaderCmp />
+      <HeaderCmp hideMenu={true} />
     </header>
     <header className={styles.containerFix} id="containerFix">
       <div className={styles.subContainerFix}>
