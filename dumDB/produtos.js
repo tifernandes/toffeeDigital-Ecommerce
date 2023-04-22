@@ -234,6 +234,15 @@ const produtos = [
     cores: "A base e os suportes da miniatura são em preto e a tampa é transparente",
     itensInclusos: "",
     imgs: ['IMG_0064.png', 'IMG_0059.png']
+},
+{
+    Id: "TKB-0025",
+    produto: "Case para action figures",
+    descricao: "Case para exposição e proteção de Action figures e dioramas.",
+    medidas: "Medidas externas 38,9x22,0x21,6 cm. Medidas internas 38,0x20,0x20,0 cm.",
+    cores: "A tampa é transparente e a base é preta.",
+    itensInclusos: "",
+    imgs: ['IMG_0003.png']
 }
 ];
 
