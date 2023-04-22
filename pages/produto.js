@@ -14,6 +14,7 @@ const Produto = () => {
   const { i } = router.query; 
   const queryId = i || (typeof window !== 'undefined' && window.location.search.split('=')[1]);
   const [produto, setProdutos] = useState([]);
+  const wppPrdUrl = `https://api.whatsapp.com/send/?phone=551127173954&text=Olá, Gostaria de falar com um atendente para tirar dúvidas sobre o produto: ${produto.produto}, Ref.: ${produto.Id}.`;
 
   useEffect(() => {
     setProdutos(produtos.filter((item) => item.Id == queryId)[0]); 
@@ -45,12 +46,12 @@ const Produto = () => {
         <div className={styles.contactPrd}>
           <h1>ENTRE EM CONTATO CONOSCO</h1>
           <div className={styles.btsPrd}>
-          <a href="https://api.whatsapp.com/send/?phone=5511955813703&text=" target="_blank" rel="noopener noreferrer">
+          <a href={wppPrdUrl} target="_blank" rel="noopener noreferrer">
             <Button variant="contained" startIcon={<WhatsAppIcon />}>
               Whatsapp
             </Button>
           </a>
-          <a href="mailto:atendimento@plastifesta.com.br" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:contato@thekingofboxes.com.br" target="_blank" rel="noopener noreferrer">
             <Button variant="contained" startIcon={<EmailIcon />}>
               E-Mail
             </Button>

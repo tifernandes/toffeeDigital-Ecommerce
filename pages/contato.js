@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { IMaskInput } from 'react-imask';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -34,22 +33,24 @@ const Contato = () => {
           <h1>ONDE ESTAMOS</h1>
           <br/>
           <p>Escritório: Rua Leonídio Porcionato, 58<br/>
+          Bairro Parque Tomas Saraiva<br/>
           São Paulo – SP CEP: 03280-040<br/>
-          Fábrica: Rua Herwis, 407 – Vila Ema<br/>
-          São Paulo – SP CEP: 03279-000<br/>
-          E-mail: desenvolvimento.gardini@gmail.com<br/>
-          Telefone: (11) 2717-3954 / (11) 2211-8387<br/>
-          WhatsApp: (11) 97626-4166<br/>
+          E-mail: contato@thekingofboxes.com.br<br/>
+          WhatsApp: (11) 2717-3954 <br/>
           Horário de Funcionamento:<br/>
-          segunda a quinta das 7:00 às 17:00sexta das 7:00 às 16:00</p>
+          -De segunda-feira a quinta-feira 07:00-17:00<br/>
+          -De sexta-feira 07:00-16:00</p>
           <br/>
           <br/>
           <h1>SOCIAL</h1>
           <br/>
           <div className={styles.socialMedia}>
+          <a href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer">
             <p><WhatsAppIcon /></p>
-            <p><FacebookIcon /></p>
+          </a>
+          <a href="https://www.instagram.com/thekingofboxes_/" target="_blank" rel="noopener noreferrer">
             <p><InstagramIcon /></p>
+          </a>
           </div>
         </div>
         <div className={styles.formulario}>
@@ -87,7 +88,7 @@ const Contato = () => {
         </div>
       </div>
       <div className={styles.maps}>
-        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14626.331860631772!2d-46.5413586!3d-23.5834169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb682e32d34fc7fbb!2sFerramentaria+Gardini+Ltda!5e0!3m2!1spt-BR!2sbr!4v1523538974505" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5734045801246!2d-46.543407125294856!3d-23.583760062414353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5da499b22fad%3A0x8ffdc054e8c7f334!2sR.%20Leon%C3%ADdio%20Porcionato%2C%2058%20-%20Parque%20Tomas%20Saraiva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003280-040%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1682179051267!5m2!1spt-BR!2sus" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
       </div>
     </div>
   );

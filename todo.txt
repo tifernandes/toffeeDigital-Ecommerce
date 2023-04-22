@@ -1,6 +1,2 @@
-Imagens produtos
-Menu Mobile
-Pegar informações do Footer, contato da shopify, whats e email
 imagem categoria inicio
-slide para imagem dos produtos e no inicio
-favicon
+Formulario de contato

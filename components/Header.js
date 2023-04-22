@@ -4,7 +4,6 @@ import Image from 'next/image'
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import CallIcon from '@mui/icons-material/Call';
-import Button from '@mui/material/Button';
 
 const Header = () => {
 
@@ -44,9 +43,6 @@ const Header = () => {
   }
 
   const HeaderCmp = (props) => {
-
-    console.log('props')
-    console.log(props.hideMenu)
 
     const hideMenu = props.hideMenu
 

@@ -63,31 +63,13 @@ const produtos = [
     imgs: ['IMG_0082-(2).png']
 },
 {
-    Id: 'TKB-0009-1',
+    Id: 'TKB-0009',
     produto: 'Elevador para miniaturas 1:64',
     descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
     medidas: '5,1x5,3x8,4 cm',
-    cores: 'Preto',
+    cores: ['Preto', 'Vermelho', 'Preto e Vermelho'],
     itens: 'Não informado',
     imgs: ['IMG_0075.png', 'IMG_0145.png']
-},
-{
-    Id: 'TKB-0009-2',
-    produto: 'Elevador para miniaturas 1:64',
-    descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
-    medidas: '5,1x5,3x8,4 cm',
-    cores: 'Vermelho',
-    itens: 'Não informado',
-    imgs: ['IMG_0052-(2).png', 'IMG_0073.png']
-},
-{
-    Id: 'TKB-0009-X',
-    produto: 'Elevador para miniaturas 1:64',
-    descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
-    medidas: '5,1x5,3x8,4 cm',
-    cores: 'Preto e Vermelho',
-    itens: 'Não informado',
-    imgs: ['IMG_0052-(2).png', 'IMG_0073.png']
 },
 {
     Id: 'TKB-0010',
@@ -110,46 +92,43 @@ const produtos = [
 {    
     Id: 'TKB-0012',    
     produto: 'Prateleira arquibancada com 3 andares',    
-    descricao: 'Expositor prateleira arquibancada com 03 andares. O produto é enviado desmontado. Os parafusos acompanham na embalagem.',    medidas: '8,9x33,1x19,8 cm',    cores: 'As laterais são transparentes e as prateleiras em preto.',    itens: ''  },  {    Id: 'TKB-0013',    produto: 'Cone',    descricao: 'Cone para miniaturas, dioramas e maquetes. Cada embalagem vem com 10 unidades.',    medidas: '1,2x1,2x1,2 cm',    cores: 'Laranja.',    itens: ''  },  {    Id: 'TKB-0014-1',    produto: 'Prancha de Surf',    descricao: 'Prancha de surf para miniaturas, dioramas e maquetes. Cada embalagem vem com 06 unidades, sendo 02 de cada tamanho.',    medidas: [      { tamanho: 'P', medida: '0,4x0,7x3,2 cm' },      { tamanho: 'M', medida: '0,5x0,8x4,0 cm' },      { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }    ],
-    cores: 'Preto.',
+    descricao: 'Expositor prateleira arquibancada com 03 andares. O produto é enviado desmontado. Os parafusos acompanham na embalagem.',    
+    medidas: '8,9x33,1x19,8 cm',    
+    cores: 'As laterais são transparentes e as prateleiras em preto.',    
     itens: '',
-    imgs: ['IMG_0005.png', 'IMG_0006.png']
+    imgs: ['IMG_0005.png']
 },
-{
-    Id: 'TKB-0014-2',
-    produto: 'Prancha de Surf',
-    descricao: 'Prancha de surf para miniaturas, dioramas e maquetes. Cada embalagem vem com 06 unidades, sendo 02 de cada tamanho.',
-    medidas: [
-    { tamanho: 'P', medida: '0,4x0,7x3,2 cm' },
-    { tamanho: 'M', medida: '0,5x0,8x4,0 cm' },
-    { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }
+{    
+    Id: 'TKB-0013',    
+    produto: 'Cone',    
+    descricao: 'Cone para miniaturas, dioramas e maquetes. Cada embalagem vem com 10 unidades.',   
+    medidas: '1,2x1,2x1,2 cm',    
+    cores: 'Laranja.',    
+    itens: '',
+    imgs: ['IMG_0100.png']
+}, 
+{    
+    Id: 'TKB-0014',    
+    produto: 'Prancha de Surf',    
+    descricao: 'Prancha de surf para miniaturas, dioramas e maquetes. Cada embalagem vem com 06 unidades, sendo 02 de cada tamanho.',    
+    medidas: [      
+        { tamanho: 'P', medida: '0,4x0,7x3,2 cm' },     
+        { tamanho: 'M', medida: '0,5x0,8x4,0 cm' },      
+        { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }    
     ],
-    cores: 'Branco.',
+    cores: ['Preto', 'Branco', 'Laranja'],
     itens: '',
-    imgs: ['IMG_0031.png', 'IMG_0210.png', 'IMG_0213.png']
+    imgs: ['IMG_0031.png', 'IMG_0210.jpg']
 },
 {
-    Id: 'TKB-0014-3',
-    produto: 'Prancha de Surf',
-    descricao: 'Prancha de surf para miniaturas, dioramas e maquetes. Cada embalagem vem com 06 unidades, sendo 02 de cada tamanho.',
-    medidas: [
-    { tamanho: 'P', medida: '0,4x0,7x3,2 cm' },
-    { tamanho: 'M', medida: '0,5x0,8x4,0 cm' },
-    { tamanho: 'G', medida: '0,7x1,2x5,5 cm' }
-    ],
-    cores: 'Laranja.',
-    itens: '',
-    imgs: ['IMG_0031.png', 'IMG_0210.png', 'IMG_0213.png']
-},
-{
-    Id: 'TKB-0015-1',
+    Id: 'TKB-0015',
     produto: 'Rodas para Customização de miniaturas 1:64',
     descricao: 'Rodas com pneus em borracha para customização de miniaturas 1:64.',
     medidas: 'Ø 1,1 cm',
     cores: '',
     itens: '',
     imgs: ['TKB-0015-1.png', 'TKB-0015-2.png']
-    },
+},
 {
     Id: 'TKB-0016',
     produto: 'Case 1:64 Premium',
