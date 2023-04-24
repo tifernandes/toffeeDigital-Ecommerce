@@ -22,10 +22,10 @@ const Home = () => {
             <Image className={styles.logoImg} src="/acessorios.png" width={328} height={314}/>
           </div>
           <div>
-            <Image className={styles.logoImg} src="/caixas.png" width={328} height={314}/>
+            <Image className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
           </div>
           <div>
-            <Image className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
+            <Image className={styles.logoImg} src="/organizacao.png" width={328} height={314}/>
           </div>
         </div>
       </div>
