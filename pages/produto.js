@@ -39,6 +39,8 @@ const Produto = () => {
     }else if(prdMedidas != null && Array.isArray(prdMedidas) && typeof prdMedidas !== 'object'){
       prdMedidas = arrayToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
+    }else{
+      setProdutosMedidas(prdMedidas);
     }
   }
 
