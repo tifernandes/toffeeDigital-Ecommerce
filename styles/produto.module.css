@@ -10,14 +10,19 @@
 }
 
 .imgPrd {
-    max-width: 633px;
-    max-height: 633px;
-    position: relative;
     background: #FFFFFF;
     border: 1px solid #DEE2E6;
-    display: flex;
+    padding: 3%;
+}
+
+.centerImg {
+    max-width: 633px;
+    max-height: 633px;
+    width: 60% !important;
+    display: flex !important;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .descPrd {
@@ -72,11 +77,6 @@
     color: #000000;
 }
 
-.logoImg {
-    width: 50% !important;
-    height: 100% !important;
-}
-
 .infPrd p{
     font-weight: 400;
     font-size: 16px;
@@ -102,6 +102,10 @@
     }
 
     .descPrd {
+        width: 90%;
+    }
+
+    .imgPrd {
         width: 90%;
     }
 }

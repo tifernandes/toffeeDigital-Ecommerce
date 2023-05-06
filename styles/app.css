@@ -27,6 +27,41 @@ h2::before {
     margin:0 10px 0 0;
 }
 
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.whatsAppFloat {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsAppFloat svg {
+    font-size: 40px;
+}
+
+.whatsAppFloat a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     h2 {
         margin-left: 20px;

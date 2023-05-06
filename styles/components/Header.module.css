@@ -23,6 +23,7 @@
 
 .subContainerFix {
     max-width: 1142px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,4 +97,12 @@
     .logo {
         margin: 0 auto;
     }
+
+    .menu ul, .menuMobile ul {  
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex; 
+        padding: 0;
+    }  
 }
