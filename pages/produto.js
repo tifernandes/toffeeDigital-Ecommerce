@@ -28,7 +28,7 @@ const Produto = () => {
   }, [])
 
   const coresHandler = (cores) => {
-    let coresPrd = `${cores.join(', ')}`
+    let coresPrd = Array.isArray(cores) ? `${cores.join(', ')}` : cores
     setProdutosCores(coresPrd);
   }
 
@@ -36,7 +36,7 @@ const Produto = () => {
     if(prdMedidas != null && typeof prdMedidas === 'object' && !Array.isArray(prdMedidas)) {
       prdMedidas = objectToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
-    }else if(prdMedidas != null && Array.isArray(prdMedidas)){
+    }else if(prdMedidas != null && Array.isArray(prdMedidas) && typeof prdMedidas !== 'object'){
       prdMedidas = arrayToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
     }

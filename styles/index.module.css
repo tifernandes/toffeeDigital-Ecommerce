@@ -40,4 +40,8 @@
         align-items: center;
         flex-direction: column;
     }
+
+    .slide { 
+        display: none;
+    }
 }
