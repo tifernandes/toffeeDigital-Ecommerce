@@ -6,8 +6,15 @@ import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { useRouter } from 'next/router';
 
 const Produtos = () => {
+
+  const router = useRouter();
+  const { i } = router.query; 
+  const queryId = i || (typeof window !== 'undefined' && window.location.search.split('=')[1]);
+  console.log('queryId')
+  console.log(queryId)
 
   const [productCount, setProductCount] = useState(8);
 

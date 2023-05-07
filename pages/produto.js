@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/produto.module.css';
-import Image from 'next/image'
 import Head from 'next/head'
 import { useRouter } from 'next/router';
 import produtos from '../dumDB/produtos'
@@ -9,7 +8,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { display } from '@mui/system';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Link from 'next/link'
 
 const Produto = () => {
 
@@ -25,7 +25,7 @@ const Produto = () => {
     setProdutos(produtos.filter((item) => item.Id == queryId)[0]); 
     medidasHandler(produtos.filter((item) => item.Id == queryId)[0].medidas);
     coresHandler(produtos.filter((item) => item.Id == queryId)[0].cores);
-  }, [])
+  }, [queryId])
 
   const coresHandler = (cores) => {
     let coresPrd = Array.isArray(cores) ? `${cores.join(', ')}` : cores
@@ -103,6 +103,21 @@ const Produto = () => {
 
           <h3>Medidas</h3>
           <p>{produtoMedidas}</p>
+
+          <br />
+          {produto.variacao && 
+          <>
+            <h3>Variação</h3>
+            <ButtonGroup variant="outlined" aria-label="outlined button group" style={{margin: '5px'}}>
+              {produto.variacao.map(v => {
+                return (
+                  <Link href={'/produto?i=' + v} key={v} style={{marginRight: '5px'}}>
+                      <Button>{v}</Button>
+                  </Link>
+              )})}
+            </ButtonGroup>
+          </>
+          }
           <div className={styles.divsorPrd}></div>
         </div>
         <div className={styles.contactPrd}>

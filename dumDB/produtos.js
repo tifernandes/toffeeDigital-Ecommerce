@@ -15,7 +15,8 @@ const produtos = [
     medidas: '4,7x10,1x22,8 cm',
     cores: 'Transparente',
     itens: '',
-    imgs: ['IMG_0052-(2).png', 'IMG_0073.png']
+    imgs: ['IMG_0052-(2).png', 'IMG_0073.png'],
+    variacao: ['TKB-0003-2']
 },
 {
     Id: 'TKB-0003-2',
@@ -24,7 +25,8 @@ const produtos = [
     medidas: 'Expositor: 4,7x10,1x22,8 cm; Base: 1,2x7,4x7,1 cm',
     cores: 'Transparente',
     itens: '',
-    imgs: ['IMG_0047-(2).png', 'IMG_0043semtrava.png']
+    imgs: ['IMG_0047-(2).png', 'IMG_0043semtrava.png'],
+    variacao: ['TKB-0003-1']
 },
 {
     Id: 'TKB-0005',
@@ -215,7 +217,8 @@ const produtos = [
     medidas: "46,3x31,0x4,6 cm",
     cores: "O nicho é transparente e o porta nicho é branco",
     itensInclusos: "",
-    imgs: ['TKB-0023-1t.png', 'TKB-0023-1.png']
+    imgs: ['TKB-0023-1t.png', 'TKB-0023-1.png'],
+    variacao: ['TKB-0023-2']
 },
 {
     Id: "TKB-0023-2",
@@ -224,7 +227,8 @@ const produtos = [
     medidas: "46,3x31,0x5,4 cm",
     cores: "O nicho é preto e o porta nicho é branco",
     itensInclusos: "",
-    imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png']
+    imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png'],
+    variacao: ['TKB-0023-1']
 },
 {
     Id: "TKB-0024",

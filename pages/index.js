@@ -3,6 +3,7 @@ import styles from '../styles/index.module.css';
 import Image from 'next/image';
 import Produtos from '../components/Produtos';
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -20,15 +21,15 @@ const Home = () => {
             <h2>LINHA DE PRODUTOS</h2>
           </div>
           <div className={styles.cts}>
-            <div>
+            <Link href={'/produtos?ct=acessorios'}>
               <Image className={styles.logoImg} src="/acessorios.png" width={328} height={314}/>
-            </div>
-            <div>
+            </Link>
+            <Link href={'/produtos?ct=expositores'}>
               <Image className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
-            </div>
-            <div>
+            </Link>
+            <Link href={'/produtos?ct=organizacao'}>
               <Image className={styles.logoImg} src="/organizacao.png" width={328} height={314}/>
-            </div>
+            </Link>
           </div>
         </div>
         <Produtos />
