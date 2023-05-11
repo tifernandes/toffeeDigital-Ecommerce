@@ -33,10 +33,16 @@ const Produto = () => {
   }
 
   const medidasHandler = (prdMedidas) => {
-    if(prdMedidas != null && typeof prdMedidas === 'object' && !Array.isArray(prdMedidas)) {
+    console.log('ti')
+    console.log(prdMedidas)
+    console.log(typeof prdMedidas === 'object')
+    console.log(Array.isArray(prdMedidas))
+    if(typeof prdMedidas === 'object' && !Array.isArray(prdMedidas)) {
+      console.log('É obj sem array')
       prdMedidas = objectToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
-    }else if(prdMedidas != null && Array.isArray(prdMedidas) && typeof prdMedidas !== 'object'){
+    }else if(Array.isArray(prdMedidas)){
+      console.log('É array')
       prdMedidas = arrayToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
     }else{

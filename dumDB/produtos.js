@@ -69,7 +69,7 @@ const produtos = [
     produto: 'Elevador para miniaturas 1:64',
     descricao: 'Elevador para exposição de miniaturas 1:64 em dioramas e maquetes.',
     medidas: '5,1x5,3x8,4 cm',
-    cores: ['Preto', 'Vermelho', 'Preto e Vermelho'],
+    cores: ['Preto', 'Vermelho'],
     itens: 'Não informado',
     imgs: ['IMG_0075.png', 'IMG_0145.png']
 },
@@ -129,7 +129,7 @@ const produtos = [
     medidas: 'Ø 1,1 cm',
     cores: '',
     itens: '',
-    imgs: ['TKB-0015-1.png', 'TKB-0015-2.png']
+    imgs: ['IMG-4987.jpg', 'TKB-0015-2.png']
 },
 {
     Id: 'TKB-0016',
