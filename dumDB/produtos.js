@@ -15,7 +15,7 @@ const produtos = [
     medidas: '4,7x10,1x22,8 cm',
     cores: 'Transparente',
     itens: '',
-    imgs: ['IMG_0052-(2).png', 'IMG_0073.png'],
+    imgs: ['IMG_0052-(2).png', 'IMG_0070 (2).png'],
     variacao: ['TKB-0003-2']
 },
 {
@@ -62,7 +62,7 @@ const produtos = [
     medidas: '2,0x5,5x5,7 cm',
     cores: 'Translucido',
     itens: 'Não informado',
-    imgs: ['IMG_0082-(2).png']
+    imgs: ['IMG_0082-(2).png', 'IMG_0081.jpg']
 },
 {
     Id: 'TKB-0009',
@@ -98,7 +98,7 @@ const produtos = [
     medidas: '8,9x33,1x19,8 cm',    
     cores: 'As laterais são transparentes e as prateleiras em preto.',    
     itens: '',
-    imgs: ['IMG_0005.png']
+    imgs: ['IMG_0005.png', 'IMG_0006.png']
 },
 {    
     Id: 'TKB-0013',    
@@ -107,7 +107,7 @@ const produtos = [
     medidas: '1,2x1,2x1,2 cm',    
     cores: 'Laranja.',    
     itens: '',
-    imgs: ['IMG_0100.png']
+    imgs: ['IMG_0100.png', 'IMG_0148-(2).png']
 }, 
 {    
     Id: 'TKB-0014',    
@@ -129,7 +129,7 @@ const produtos = [
     medidas: 'Ø 1,1 cm',
     cores: '',
     itens: '',
-    imgs: ['IMG-4987.jpg', 'TKB-0015-2.png']
+    imgs: ['TKB-0015-2.png', 'IMG-4987.jpg']
 },
 {
     Id: 'TKB-0016',
@@ -217,7 +217,7 @@ const produtos = [
     medidas: "46,3x31,0x4,6 cm",
     cores: "O nicho é transparente e o porta nicho é branco",
     itensInclusos: "",
-    imgs: ['TKB-0023-1t.png', 'TKB-0023-1.png'],
+    imgs: ['TKB-0023-1.png', 'TKB-0023-1t.png'],
     variacao: ['TKB-0023-2']
 },
 {
@@ -246,7 +246,7 @@ const produtos = [
     medidas: "Medidas externas 38,9x22,0x21,6 cm. Medidas internas 38,0x20,0x20,0 cm.",
     cores: "A tampa é transparente e a base é preta.",
     itensInclusos: "",
-    imgs: ['IMG_0003.png']
+    imgs: ['IMG_0003.png', 'IMG_0012 - Copia.png', 'IMG_0019 - Copia.png']
 }
 ];
 

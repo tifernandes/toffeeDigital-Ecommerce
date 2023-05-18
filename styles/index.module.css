@@ -33,6 +33,8 @@
     margin-top: 28px;
     display: flex;
     gap: 79px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {

@@ -27,9 +27,9 @@ const Home = () => {
             <Link href={'/produtos?ct=expositores'}>
               <Image className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
             </Link>
-            <Link href={'/produtos?ct=organizacao'}>
+            {/* <Link href={'/produtos?ct=organizacao'}>
               <Image className={styles.logoImg} src="/organizacao.png" width={328} height={314}/>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <Produtos />

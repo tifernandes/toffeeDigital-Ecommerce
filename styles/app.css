@@ -36,6 +36,10 @@ h3 {
     align-items: center;
 }
 
+.css-1ps6pg7-MuiPaper-root {
+    box-shadow: unset;
+}
+
 .whatsAppFloat {
     position: fixed;
     width: 60px;

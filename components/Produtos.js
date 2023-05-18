@@ -13,9 +13,6 @@ const Produtos = () => {
   const router = useRouter();
   const { i } = router.query; 
   const queryId = i || (typeof window !== 'undefined' && window.location.search.split('=')[1]);
-  console.log('queryId')
-  console.log(queryId)
-
   const [productCount, setProductCount] = useState(8);
 
   const initialProducts = produtos.slice(0, productCount);

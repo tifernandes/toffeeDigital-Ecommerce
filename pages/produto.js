@@ -6,10 +6,10 @@ import produtos from '../dumDB/produtos'
 import Button from '@mui/material/Button';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Link from 'next/link'
+import SlideCarousel from '../components/SlideCarousel';
 
 const Produto = () => {
 
@@ -33,16 +33,10 @@ const Produto = () => {
   }
 
   const medidasHandler = (prdMedidas) => {
-    console.log('ti')
-    console.log(prdMedidas)
-    console.log(typeof prdMedidas === 'object')
-    console.log(Array.isArray(prdMedidas))
     if(typeof prdMedidas === 'object' && !Array.isArray(prdMedidas)) {
-      console.log('É obj sem array')
       prdMedidas = objectToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
     }else if(Array.isArray(prdMedidas)){
-      console.log('É array')
       prdMedidas = arrayToString(prdMedidas);
       setProdutosMedidas(prdMedidas);
     }else{
@@ -85,13 +79,7 @@ const Produto = () => {
       </Head>
       <div className={styles.imgPrd}>
         {produto.imgs && 
-          <LazyLoadImage
-          wrapperClassName={styles.centerImg}
-          className={styles.logoImg} 
-          effect="blur"
-          src={'/produtos/' + produto.Id + '/' + produto.imgs[0]} 
-          width={'100%'}
-          height={'100%'}/>
+          <SlideCarousel produto={produto}/>
         }
       </div>
       <div className={styles.descPrd}>
