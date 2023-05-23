@@ -20,7 +20,7 @@ const Produtos = () => {
   
   return (
     <div className={styles.container}>
-      <a className={styles.catalogo} href="https://drive.google.com/file/d/1usl_YdWWDoGmcJ_VSChIYE8RSkM5iXQW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <a className={styles.catalogo} href="https://drive.google.com/file/d/1K6v-2zHBeKVks3LajMDVcdCQ5_yU8vyM/view" target="_blank" rel="noopener noreferrer">
         <Alert severity="warning">
           Conheça nosso catálogo digital. <strong>Clique Aqui !</strong>
         </Alert>
