@@ -12,7 +12,12 @@ const Home = () => {
           <title>The King of Boxes - Início</title>
       </Head>
       <div className={styles.slide}>
-        <div className={styles.slide1}></div>
+        <div className={styles.slide1}>
+          <div className={styles.slideTxt}>
+            <h1>Produtos inovadores e de excelente qualidade</h1>
+            <h3>Somos uma empresa 100% nacional, fabricante e especializada em expositores para colecionáveis</h3>
+          </div>
+        </div>
         {/* <Image className={styles.logoImg} src="/slide2.jpg" fill/> */}
       </div>
       <div className={styles.subContainer}>
@@ -21,10 +26,10 @@ const Home = () => {
             <h2>LINHA DE PRODUTOS</h2>
           </div>
           <div className={styles.cts}>
-            <Link href={'/produtos?ct=acessorios'}>
+            <Link href={'/produtos?ct=Acessorios'}>
               <Image className={styles.logoImg} src="/acessorios.png" width={328} height={314}/>
             </Link>
-            <Link href={'/produtos?ct=expositores'}>
+            <Link href={'/produtos?ct=Expositor'}>
               <Image className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
             </Link>
             {/* <Link href={'/produtos?ct=organizacao'}>

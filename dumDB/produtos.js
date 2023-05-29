@@ -6,7 +6,8 @@ const produtos = [
     medidas: '5,3x5,7x10,6 cm',
     cores: 'Base e suporte preto, tampa transparente',
     itens: '',
-    imgs: ['IMG_0008.png', 'IMG_0073.png']
+    imgs: ['IMG_0008.png', 'IMG_0073.png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0003-1',
@@ -16,7 +17,8 @@ const produtos = [
     cores: 'Transparente',
     itens: '',
     imgs: ['IMG_0052-(2).png', 'IMG_0070 (2).png'],
-    variacao: ['TKB-0003-2']
+    variacao: ['TKB-0003-2'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0003-2',
@@ -26,7 +28,8 @@ const produtos = [
     cores: 'Transparente',
     itens: '',
     imgs: ['IMG_0047-(2).png', 'IMG_0043semtrava.png'],
-    variacao: ['TKB-0003-1']
+    variacao: ['TKB-0003-1'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0005',
@@ -35,7 +38,8 @@ const produtos = [
     medidas: '8,5x16,8x30,8 cm',
     cores: 'Transparente',
     itens: '',
-    imgs: ['IMG_0029.png', 'IMG_0043-(2).png']
+    imgs: ['IMG_0029.png', 'IMG_0043-(2).png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0006',
@@ -44,7 +48,8 @@ const produtos = [
     medidas: '8,5x16,8x30,8 cm',
     cores: 'Transparente',
     itens: '',
-    imgs: ['IMG_0058.png', 'IMG_0058-(2).png', 'IMG_0045.png']
+    imgs: ['IMG_0058.png', 'IMG_0058-(2).png', 'IMG_0045.png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0007',
@@ -53,7 +58,8 @@ const produtos = [
     medidas: '1,9x3,4x8,0 cm',
     cores: 'Preto',
     itens: 'Não informado',
-    imgs: ['IMG_0018.png', 'IMG_0112.png']
+    imgs: ['IMG_0018.png', 'IMG_0112.png'],
+    categoria: ['Expositor', 'Acessorios']
 },
 {
     Id: 'TKB-0008',
@@ -62,7 +68,8 @@ const produtos = [
     medidas: '2,0x5,5x5,7 cm',
     cores: 'Translucido',
     itens: 'Não informado',
-    imgs: ['IMG_0082-(2).png', 'IMG_0081.jpg']
+    imgs: ['IMG_0082-(2).png', 'IMG_0081.jpg'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0009',
@@ -71,7 +78,8 @@ const produtos = [
     medidas: '5,1x5,3x8,4 cm',
     cores: ['Preto', 'Vermelho'],
     itens: 'Não informado',
-    imgs: ['IMG_0075.png', 'IMG_0145.png']
+    imgs: ['IMG_0075.png', 'IMG_0145.png'],
+    categoria: ['Expositor', 'Acessorios']
 },
 {
     Id: 'TKB-0010',
@@ -80,7 +88,8 @@ const produtos = [
     medidas: '16,4x33,1x32,8 cm',
     cores: 'Laterais transparentes e prateleiras em preto',
     itens: 'Não informado',
-    imgs: ['IMG_0002.png', 'IMG_0001.png']
+    imgs: ['IMG_0002.png', 'IMG_0001.png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0011',
@@ -89,7 +98,8 @@ const produtos = [
     medidas: '12,6x33,1x26,3 cm',
     cores: 'Laterais transparentes e prateleiras em preto',
     itens: 'Não informado',
-    imgs: ['IMG_0003.png', 'IMG_0004-(2).png']
+    imgs: ['IMG_0003.png', 'IMG_0004-(2).png'],
+    categoria: ['Expositor']
 },
 {    
     Id: 'TKB-0012',    
@@ -98,7 +108,8 @@ const produtos = [
     medidas: '8,9x33,1x19,8 cm',    
     cores: 'As laterais são transparentes e as prateleiras em preto.',    
     itens: '',
-    imgs: ['IMG_0005.png', 'IMG_0006.png']
+    imgs: ['IMG_0005.png', 'IMG_0006.png'],
+    categoria: ['Expositor']
 },
 {    
     Id: 'TKB-0013',    
@@ -107,7 +118,8 @@ const produtos = [
     medidas: '1,2x1,2x1,2 cm',    
     cores: 'Laranja.',    
     itens: '',
-    imgs: ['IMG_0100.png', 'IMG_0148-(2).png']
+    imgs: ['IMG_0100.png', 'IMG_0148-(2).png'],
+    categoria: ['Acessorios']
 }, 
 {    
     Id: 'TKB-0014',    
@@ -120,7 +132,8 @@ const produtos = [
     ],
     cores: ['Preto', 'Branco', 'Laranja'],
     itens: '',
-    imgs: ['IMG_0031.png', 'IMG_0210.jpg']
+    imgs: ['IMG_0031.png', 'IMG_0210.jpg'],
+    categoria: ['Acessorios']
 },
 {
     Id: 'TKB-0015',
@@ -129,7 +142,8 @@ const produtos = [
     medidas: 'Ø 1,1 cm',
     cores: '',
     itens: '',
-    imgs: ['TKB-0015-2.png', 'IMG-4987.jpg']
+    imgs: ['IMG-4987.jpg', 'TKB-0015-2.png'],
+    categoria: ['Acessorios']
 },
 {
     Id: 'TKB-0016',
@@ -141,7 +155,8 @@ const produtos = [
     },
     cores: ['Transparente'],
     itens: [],
-    imgs: ['IMG_0060-(2).png', 'IMG_0027.png']
+    imgs: ['IMG_0060-(2).png', 'IMG_0027.png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0017',
@@ -154,7 +169,8 @@ const produtos = [
     },
     cores: ['Transparente'],
     itens: [],
-    imgs: ['IMG_0072.png', 'IMG_0044.png']
+    imgs: ['IMG_0072.png', 'IMG_0044.png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0018',
@@ -166,7 +182,8 @@ const produtos = [
     },
     cores: ['Transparente', 'Preta'],
     itens: ['Base com furações'],
-    imgs: ['IMG_0030-(2).png', 'IMG_0029-(2).png']
+    imgs: ['IMG_0030-(2).png', 'IMG_0029-(2).png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0019',
@@ -178,7 +195,8 @@ const produtos = [
     },
     cores: ['Transparente', 'Preta'],
     itens: ['Base com furações'],
-    imgs: ['IMG_0032-(2).png', 'IMG_0035-(2).png']
+    imgs: ['IMG_0032-(2).png', 'IMG_0035-(2).png'],
+    categoria: ['Expositor']
 },
 {
     Id: 'TKB-0020',
@@ -190,7 +208,8 @@ const produtos = [
     },
     cores: ['Transparente'],
     itens: [],
-    imgs: ['IMG_0109.png', 'IMG_0035.png']
+    imgs: ['IMG_0109.png', 'IMG_0035.png'],
+    categoria: ['Expositor']
 },
 {
     Id: "TKB-0021",
@@ -199,7 +218,8 @@ const produtos = [
     medidas: "19,8x 11,8x4,5 cm",
     cores: "Transparente",
     itensInclusos: "",
-    imgs: ['IMG_0040.png', 'IMG_0004.png']
+    imgs: ['IMG_0040.png', 'IMG_0004.png'],
+    categoria: ['Expositor']
 },
 {
     Id: "TKB-0022",
@@ -208,7 +228,8 @@ const produtos = [
     medidas: "Com o pendurador aberto (AxLxC): 3,3x4,3x9,9 cm / Com o pendurador dobrado (AxLxC): 3,3x4,3x8,7 cm",
     cores: "Translucido",
     itensInclusos: "",
-    imgs: ['tkb-0022a.png', 'tkb-0022.png']
+    imgs: ['tkb-0022a.png', 'tkb-0022.png'],
+    categoria: ['Expositor']
 },
 {
     Id: "TKB-0023-1",
@@ -218,7 +239,8 @@ const produtos = [
     cores: "O nicho é transparente e o porta nicho é branco",
     itensInclusos: "",
     imgs: ['TKB-0023-1.png', 'TKB-0023-1t.png'],
-    variacao: ['TKB-0023-2']
+    variacao: ['TKB-0023-2'],
+    categoria: ['Expositor']
 },
 {
     Id: "TKB-0023-2",
@@ -228,16 +250,18 @@ const produtos = [
     cores: "O nicho é preto e o porta nicho é branco",
     itensInclusos: "",
     imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png'],
-    variacao: ['TKB-0023-1']
+    variacao: ['TKB-0023-1'],
+    categoria: ['Expositor']
 },
 {
     Id: "TKB-0024",
-    produto: "Case para 1/43 e 1/32",
+    produto: "Case para 1:43 e 1:32",
     descricao: "Um case para proteção e exposição de miniaturas 1/43 e 1/32. Ideal para miniaturas customizadas ou sem embalagem.",
     medidas: "7,1x7,9x15,4 cm",
     cores: "A base e os suportes da miniatura são em preto e a tampa é transparente",
     itensInclusos: "",
-    imgs: ['IMG_0064.png', 'IMG_0059.png']
+    imgs: ['IMG_0064.png', 'IMG_0059.png'],
+    categoria: ['Expositor']
 },
 {
     Id: "TKB-0025",
@@ -246,7 +270,18 @@ const produtos = [
     medidas: "Medidas externas 38,9x22,0x21,6 cm. Medidas internas 38,0x20,0x20,0 cm.",
     cores: "A tampa é transparente e a base é preta.",
     itensInclusos: "",
-    imgs: ['IMG_0003.png', 'IMG_0012 - Copia.png', 'IMG_0019 - Copia.png']
+    imgs: ['IMG_0003.png', 'IMG_0012 - Copia.png', 'IMG_0019 - Copia.png'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0026",
+    produto: "Case para RLC",
+    descricao: "Case para exposição e proteção de Hot Wheels RLC e outros colecionáveis.",
+    medidas: "Medidas externas 6,7 x 13,0 x 15,8 cm.",
+    cores: "Transparente",
+    itensInclusos: "",
+    imgs: ['IMG_0037.jpg', 'IMG_0008.jpg'],
+    categoria: ['Expositor']
 }
 ];
 

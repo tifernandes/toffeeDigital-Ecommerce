@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from'../styles/components/Produtos.module.css';
-import produtos from '../dumDB/produtos'
+import prds from '../dumDB/produtos'
 import Link from 'next/link'
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
@@ -12,11 +12,23 @@ const Produtos = () => {
 
   const router = useRouter();
   const { i } = router.query; 
-  const queryId = i || (typeof window !== 'undefined' && window.location.search.split('=')[1]);
   const [productCount, setProductCount] = useState(8);
+  const [initialProducts, setInitialProducts] = useState([]);
+  const [hasMoreProducts, setHasMoreProducts] = useState([]);
 
-  const initialProducts = produtos.slice(0, productCount);
-  const hasMoreProducts = produtos.length > productCount;
+  useEffect(() => {
+    const queryId = i || (typeof window !== 'undefined' && window.location.search.split('=')[1]);
+    let newPrds
+
+    if(queryId != null){
+      newPrds = prds.filter((i) => i.categoria.includes(queryId));
+    }else{
+      newPrds = prds;
+    }
+
+    setInitialProducts(newPrds.slice(0, productCount));
+    setHasMoreProducts(newPrds.length > productCount);
+  }, [productCount])
   
   return (
     <div className={styles.container}>

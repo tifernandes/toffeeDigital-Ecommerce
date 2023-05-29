@@ -4,6 +4,7 @@ import Image from 'next/image'
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import CallIcon from '@mui/icons-material/Call';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 
 const Header = () => {
 
@@ -37,6 +38,11 @@ const Header = () => {
           <li><a href="/"><HomeIcon/> Início</a></li>
           <li><a href="/produtos"><ShoppingBagIcon/> Produtos</a></li>
           <li><a href="/contato"><CallIcon/> Contato</a></li>
+          <li>
+              <a href="https://drive.google.com/file/d/1K6v-2zHBeKVks3LajMDVcdCQ5_yU8vyM/view" target="_blank" rel="noopener noreferrer">
+              <ListAltIcon/> Catálogo
+            </a>
+          </li>
         </ul>
       </>
     )
