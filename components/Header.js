@@ -39,7 +39,7 @@ const Header = () => {
           <li><a href="/produtos"><ShoppingBagIcon/> Produtos</a></li>
           <li><a href="/contato"><CallIcon/> Contato</a></li>
           <li>
-              <a href="https://drive.google.com/file/d/1K6v-2zHBeKVks3LajMDVcdCQ5_yU8vyM/view" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m" target="_blank" rel="noopener noreferrer">
               <ListAltIcon/> Catálogo
             </a>
           </li>
