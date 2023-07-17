@@ -53,7 +53,7 @@ const Contato = () => {
           </a>
           </div>
         </div>
-        <div className={styles.formulario}>
+        {/* <div className={styles.formulario}>
           <h1>CONTATO</h1>
           <Box
             component="form"
@@ -85,7 +85,7 @@ const Contato = () => {
               </Button>
             </div>
           </Box>
-        </div>
+        </div> */}
       </div>
       <div className={styles.maps}>
         <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5734045801246!2d-46.543407125294856!3d-23.583760062414353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5da499b22fad%3A0x8ffdc054e8c7f334!2sR.%20Leon%C3%ADdio%20Porcionato%2C%2058%20-%20Parque%20Tomas%20Saraiva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003280-040%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1682179051267!5m2!1spt-BR!2sus" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
