@@ -282,6 +282,52 @@ const produtos = [
     itensInclusos: "",
     imgs: ['IMG_0037.jpg', 'IMG_0008.jpg'],
     categoria: ['Expositor']
+},
+{
+    Id: "TKB-0027",
+    produto: "Miniaturas para dioramas 1:64",
+    descricao: "",
+    medidas: "1:64",
+    cores: "Transparente",
+    itensInclusos: "",
+    imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'IMG-5619.jpg'],
+    categoria: ['Acessorios']
+},
+{
+    Id: "TKB-0028",
+    produto: "Expositor Giratório com LED",
+    descricao: "Expositor giratório com leds na parte superior e nas laterais. Acompanha 01 cabo flexível de 1,5 m.",
+    medidas: "Ø15 cm",
+    cores: "Branco",
+    itensInclusos: "",
+    imgs: ['capa.jpeg'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0029",
+    produto: "Maleta do colecionador STANDART",
+    descricao: "Uma maleta versátil e multiuso com 24 nichos.",
+    medidas: {
+        externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
+        internas: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
+    },
+    cores: "Transparente, Verde Escuro, Amarelo, Azul Escuro, Vermelho, Roxo",
+    itensInclusos: "",
+    imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0030",
+    produto: "Maleta do colecionador PREMIUM",
+    descricao: "Uma maleta versátil e multiuso com 24 nichos. PREMIUM: Acompanha 24 cases com pendurador (TKB-0022) montados dentro.",
+    medidas: {
+        externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
+        internas: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
+    },
+    cores: "Transparente, Verde Escuro, Amarelo, Azul Escuro, Vermelho, Roxo",
+    itensInclusos: "",
+    imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'],
+    categoria: ['Expositor']
 }
 ];
 

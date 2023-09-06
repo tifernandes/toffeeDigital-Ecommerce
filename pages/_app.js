@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }) => {
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
-      <div class="whatsAppFloat">
+      <div className="whatsAppFloat">
         <a href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer">
           <p><WhatsAppIcon /></p>
         </a>
