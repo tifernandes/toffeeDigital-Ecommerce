@@ -247,7 +247,7 @@ const produtos = [
     produto: "Expositor com 30 nichos Abertos",
     descricao: "Um expositor com 30 nichos abertos e individuais",
     medidas: "46,3x31,0x5,4 cm",
-    cores: "O nicho é preto e o porta nicho é branco",
+    cores: "Transparente",
     itensInclusos: "",
     imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png'],
     variacao: ['TKB-0023-1'],
@@ -296,7 +296,7 @@ const produtos = [
 {
     Id: "TKB-0028",
     produto: "Expositor Giratório com LED",
-    descricao: "Expositor giratório com leds na parte superior e nas laterais. Acompanha 01 cabo flexível de 1,5 m.",
+    descricao: "Expositor giratório com leds na parte superior e nas laterais. Acompanha 01 cabo flexível de 1,5 m. Peso máximo sugerido: 2,5 Kg. Tensão de entrada: 100-240v. Rotação: 5/6 rpm 4W.",
     medidas: "Ø15 cm",
     cores: "Branco",
     itensInclusos: "",
@@ -306,12 +306,12 @@ const produtos = [
 {
     Id: "TKB-0029",
     produto: "Maleta do colecionador STANDART",
-    descricao: "Uma maleta versátil e multiuso com 24 nichos.",
+    descricao: "Uma maleta versátil e multiuso com 24 nichos. STANDART: Não acompanha os cases com pendurador (TKB-0022). Este produto possui encaixes na parte de trás para montar um no outro.",
     medidas: {
         externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
         internas: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
     },
-    cores: "Transparente, Verde Escuro, Amarelo, Azul Escuro, Vermelho, Roxo",
+    cores: "Transparente(TKB-0029-1), Verde Escuro(TKB-0029-2), Amarelo(TKB-0029-3), Azul Escuro(TKB-0029-4), Vermelho(TKB-0029-5), Roxo(TKB-0029-6)",
     itensInclusos: "",
     imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg'],
     categoria: ['Expositor']
@@ -319,12 +319,12 @@ const produtos = [
 {
     Id: "TKB-0030",
     produto: "Maleta do colecionador PREMIUM",
-    descricao: "Uma maleta versátil e multiuso com 24 nichos. PREMIUM: Acompanha 24 cases com pendurador (TKB-0022) montados dentro.",
+    descricao: "Uma maleta versátil e multiuso com 24 nichos. PREMIUM: Acompanha 24 cases com pendurador (TKB-0022) montados dentro. Este produto possui encaixes na parte de trás para montar um no outro.",
     medidas: {
         externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
         internas: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
     },
-    cores: "Transparente, Verde Escuro, Amarelo, Azul Escuro, Vermelho, Roxo",
+    cores: "Transparente(TKB-0030-1), Verde Escuro(TKB-0030-2), Amarelo(TKB-0030-3), Azul Escuro(TKB-0030-4), Vermelho(TKB-0030-5), Roxo(TKB-0030-6)",
     itensInclusos: "",
     imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'],
     categoria: ['Expositor']
