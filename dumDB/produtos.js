@@ -288,7 +288,7 @@ const produtos = [
     produto: "Miniaturas para dioramas 1:64",
     descricao: "",
     medidas: "1:64",
-    cores: "Transparente",
+    cores: "",
     itensInclusos: "",
     imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'IMG-5619.jpg'],
     categoria: ['Acessorios']
