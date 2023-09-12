@@ -28,7 +28,7 @@ const Produto = () => {
   }, [queryId])
 
   const coresHandler = (cores) => {
-    let coresPrd = Array.isArray(cores) ? `${cores.join(', ')}` : cores
+    let coresPrd = Array.isArray(cores) ? `${cores.join('<br>')}` : cores
     setProdutosCores(coresPrd);
   }
 
@@ -46,14 +46,17 @@ const Produto = () => {
 
   function objectToString(obj) {
     let result = '';
+    let count = 0;
     for (const key in obj) {
       if (Object.hasOwnProperty.call(obj, key)) {
         const value = obj[key];
+        const capitalizedKey = key.charAt(0).toUpperCase() + key.slice(1);
         if (typeof value === 'object') {
-          result += ` ${key}: ${objectToString(value)}. `;
+          result += `${count != 0 ? '<br><br>' : ''}${capitalizedKey}:<br>${objectToString(value)}<br>`;
         } else {
-          result += `${key}: ${value}, `;
+          result += `${key}: ${value}<br>`;
         }
+        count++;
       }
     }
     return result.slice(0, -2);
@@ -64,7 +67,7 @@ const Produto = () => {
     for (const medida of array) {
       for (const key in medida) {
         if (Object.hasOwnProperty.call(medida, key)) {
-          medidasString += ` ${key}: ${medida[key]},\n`;
+          medidasString += ` ${key}: ${medida[key]},<br>`;
         }
       }
     }
@@ -91,12 +94,12 @@ const Produto = () => {
           <br />
 
           <h3>Cores</h3>
-          <p>{produtoCores}</p>
+          <p dangerouslySetInnerHTML={{ __html: produtoCores}} ></p>
 
           <br />
 
           <h3>Medidas</h3>
-          <p>{produtoMedidas}</p>
+          <p dangerouslySetInnerHTML={{ __html: produtoMedidas }}></p>
 
           <br />
           {produto.variacao && 
