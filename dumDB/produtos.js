@@ -239,7 +239,7 @@ const produtos = [
     cores: "O nicho é transparente e o porta nicho é branco",
     itensInclusos: "",
     imgs: ['TKB-0023-1.png', 'TKB-0023-1t.png'],
-    variacao: ['TKB-0023-2'],
+    variacao: ['TKB-0023-2','TKB-0023-3'],
     categoria: ['Expositor']
 },
 {
@@ -250,7 +250,18 @@ const produtos = [
     cores: "Transparente",
     itensInclusos: "",
     imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png'],
-    variacao: ['TKB-0023-1'],
+    variacao: ['TKB-0023-1','TKB-0023-3'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0023-3",
+    produto: "Um expositor com 30 nichos fechados.",
+    descricao: "Um expositor com 30 nichos fechados e individuais.",
+    medidas: "(AxLxC): 46,3x31,0x4,6 cm",
+    cores: "O nicho é transparente e o porta nicho é preto",
+    itensInclusos: "",
+    imgs: ['1.png', '2.png'],
+    variacao: ['TKB-0023-1','TKB-0023-2'],
     categoria: ['Expositor']
 },
 {
