@@ -9,6 +9,8 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import Head from 'next/head'
 import Image from 'next/image';
+import contatoBanner from '../public/contatoBanner.svg'
+import contatoBannerMB from '../public/contatoBannerMB.svg'
 
 const TextMaskCustom = React.forwardRef(function TextMaskCustom(props, ref) {
   const { onChange, ...other } = props;
@@ -30,8 +32,8 @@ const Contato = () => {
           <title>The King of Boxes - Contato</title>
       </Head>
       <div className={styles.bannerContainer}>
-        <Image className={styles.banner} src="/contato.png" fill quality={100}/>
-        <Image className={styles.bannerMB} src="/contatoMB.png" fill quality={100}/>
+        <Image className={styles.banner} src={contatoBanner} quality={100}/>
+        <Image className={styles.bannerMB} src={contatoBannerMB} quality={100}/>
       </div>
       <div className={styles.subContainer}>
         <div className={styles.infoContato}>
