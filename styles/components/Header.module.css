@@ -36,13 +36,13 @@
     background: #FFFFFF;
 }
 
-.menu ul, .menuMobile ul {  
+.menuContainer ul {  
     list-style-type: none;
     gap: 37px;
     display: flex; 
 }  
 
-.menu a, .menuMobile a{
+.menu a{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -54,16 +54,12 @@
     gap: 5px;
 }
 
-.menu a:hover {
+.menuContainer a:hover {
     color: #505050;
 }
 
 .search {
     width: 30px;
-}
-
-.menuMobile {
-    display: none;
 }
 
 .menuMbShow {
@@ -81,23 +77,16 @@
 }
 
 @media (max-width: 425px) {
-    .menu {
-        display: none;
-    }
-
-    .menuMobile {
-        display: flex;
-    }
-
-    .menuMobile a {
-        font-size: 10px;
-    }
-
     .logo {
         margin: 0 auto;
     }
 
-    .menu ul, .menuMobile ul {  
+    .menuContainer{
+        position: absolute;
+        right: 20px;
+    }
+
+    .menuContainer ul {  
         list-style-type: none;
         justify-content: space-evenly;
         align-items: center;
