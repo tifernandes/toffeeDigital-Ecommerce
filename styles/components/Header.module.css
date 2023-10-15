@@ -80,7 +80,6 @@
     background-color: #ffff;
 }
 
-
 @media (max-width: 425px) {
     .menu {
         display: none;
