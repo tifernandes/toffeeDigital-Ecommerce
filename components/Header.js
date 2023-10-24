@@ -83,7 +83,7 @@ const Header = () => {
 
         <SwipeableDrawer
             PaperProps={{
-              sx: { width: "30%" },
+              sx: { width: "60%", maxWidth: "400px" },
             }}
             anchor="left"
             open={open}
@@ -99,7 +99,7 @@ const Header = () => {
           <List className={styles.menu}>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <Link href="/">
+                  <Link href="/" onClick={toggleDrawer(false)}>
                     <ListItemIcon>
                       <HomeIcon />
                     </ListItemIcon>
@@ -109,7 +109,7 @@ const Header = () => {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <Link href="/produtos">
+                  <Link href="/produtos" onClick={toggleDrawer(false)}>
                     <ListItemIcon>
                       <ShoppingBagIcon />
                     </ListItemIcon>
@@ -119,7 +119,7 @@ const Header = () => {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <Link href="/contato">
+                  <Link href="/contato" onClick={toggleDrawer(false)}>
                     <ListItemIcon>
                       <CallIcon />
                     </ListItemIcon>
@@ -129,7 +129,7 @@ const Header = () => {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <Link href="/sobrenos">
+                  <Link href="/sobrenos" onClick={toggleDrawer(false)}>
                     <ListItemIcon>
                       <BusinessIcon />
                     </ListItemIcon>
@@ -148,25 +148,12 @@ const Header = () => {
                 </ListItemButton>
               </ListItem>
           </List>
-              {/* <ul>
-                <li><a href="/"><HomeIcon/> Início</a></li>
-                <li><a href="/produtos"><ShoppingBagIcon/> Produtos</a></li>
-                <li><a href="/contato"><CallIcon/> Contato</a></li>
-                <li><a href="/sobrenos"><CallIcon/> Sobre nós</a></li>
-                <li>
-                    <a href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m" target="_blank" rel="noopener noreferrer">
-                    <ListAltIcon/> Catálogo
-                  </a>
-                </li>
-              </ul> */}
         </SwipeableDrawer>
       </>
     )
   }
 
   const HeaderCmp = (props) => {
-
-    const hideMenu = props.hideMenu
 
     return (
       <>
@@ -175,18 +162,8 @@ const Header = () => {
             <Image className={styles.logoImg} alt='logo' src="/logo.png" width={137} height={61}/>
           </a>
         </div>
-        <nav className={styles.menu}>
+        <nav className={styles.menuContainer}>
           <NavCmp />
-        </nav>
-        <nav className={styles.menuMobile}>
-          {/* <div className={styles.menuMbBt}>
-            <Button variant="text" onClick={onClick}>{menuMbOpen ? 'Menu' : 'Fechar'}</Button>
-          </div> */}
-          {!hideMenu && 
-            <div className={styles.menuMbShow} id="menuMbShow">
-              <NavCmp />
-            </div>
-          }
         </nav>
       </>
     )
