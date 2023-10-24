@@ -255,10 +255,10 @@ const produtos = [
 },
 {
     Id: "TKB-0023-3",
-    produto: "Um expositor com 30 nichos fechados.",
+    produto: "Expositor com 30 nichos fechados.",
     descricao: "Um expositor com 30 nichos fechados e individuais.",
     medidas: "(AxLxC): 46,3x31,0x4,6 cm",
-    cores: "O nicho é transparente e o porta nicho é preto",
+    cores: "O nicho é transparente e o porta nicho é preto.",
     itensInclusos: "",
     imgs: ['1.png', '2.png'],
     variacao: ['TKB-0023-1','TKB-0023-2'],
@@ -317,7 +317,7 @@ const produtos = [
 {
     Id: "TKB-0029",
     produto: "Maleta do colecionador STANDART",
-    descricao: "Uma maleta versátil e multiuso com 24 nichos. STANDART: Não acompanha os cases com pendurador (TKB-0022). Este produto possui encaixes na parte de trás para montar um no outro.",
+    descricao: "Maleta versátil e multiuso com 24 nichos. STANDART: Não acompanha os cases com pendurador (TKB-0022). Este produto possui encaixes na parte de trás para montar um no outro.",
     medidas: {
         externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
         nichos: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
@@ -337,7 +337,7 @@ const produtos = [
 {
     Id: "TKB-0030",
     produto: "Maleta do colecionador PREMIUM",
-    descricao: "Uma maleta versátil e multiuso com 24 nichos. PREMIUM: Acompanha 24 cases com pendurador (TKB-0022) montados dentro. Este produto possui encaixes na parte de trás para montar um no outro.",
+    descricao: "Maleta versátil e multiuso com 24 nichos. PREMIUM: Acompanha 24 cases com pendurador (TKB-0022) montados dentro. Este produto possui encaixes na parte de trás para montar um no outro.",
     medidas: {
         externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
         nichos: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
