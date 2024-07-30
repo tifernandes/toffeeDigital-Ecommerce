@@ -10,7 +10,7 @@ const Produtos = () => {
       <div className={styles.subContainer}>
         <div className={styles.footer}>
           <div className={styles.logo}>
-            <Image className={styles.logoImg} src="/logoFooter.png" width={177} height={85}/>
+            <Image alt='logo footer' className={styles.logoImg} src="/logoFooter.png" width={177} height={85}/>
             <div className={styles.socialMedia}>
             <a href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer">
               <p><WhatsAppIcon /></p>

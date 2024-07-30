@@ -9,8 +9,8 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import Head from 'next/head'
 import Image from 'next/image';
-import sobrenosBanner from '../public/sobrenosBanner.svg'
-import sobrenosBannerMB from '../public/sobrenosBannerMB.svg'
+import sobrenosBanner from '../../public/sobrenosBanner.svg'
+import sobrenosBannerMB from '../../public/sobrenosBannerMB.svg'
 
 const SobreNos = () => {
   return (
@@ -19,8 +19,8 @@ const SobreNos = () => {
           <title>The King of Boxes - Sobre Nós</title>
       </Head>
       <div className={styles.bannerContainer}>
-        <Image className={styles.banner} src={sobrenosBanner} quality={100}/>
-        <Image className={styles.bannerMB} src={sobrenosBannerMB} quality={100}/>
+        <Image alt='banner' className={styles.banner} src={sobrenosBanner} quality={100}/>
+        <Image alt='banner' className={styles.bannerMB} src={sobrenosBannerMB} quality={100}/>
       </div>
       <div className={styles.subContainer}>
         <div className={styles.infoContato}>

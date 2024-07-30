@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from '../styles/contato.module.css';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -7,54 +7,70 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import Head from 'next/head'
+import Head from 'next/head';
 import Image from 'next/image';
-import contatoBanner from '../public/contatoBanner.svg'
-import contatoBannerMB from '../public/contatoBannerMB.svg'
+import contatoBanner from '../../public/contatoBanner.svg';
+import contatoBannerMB from '../../public/contatoBannerMB.svg';
 
-const TextMaskCustom = React.forwardRef(function TextMaskCustom(props, ref) {
+interface CustomProps {
+  onChange: (event: { target: { name: string; value: string } }) => void;
+  name: string;
+}
+
+const TextMaskCustom = React.forwardRef(function TextMaskCustom(props: any, ref) {
   const { onChange, ...other } = props;
   return (
     <IMaskInput
       {...other}
       mask="(00) 00000-0000"
       definitions={{
-        '#': /[1-9]/,
+        '#': /[0-9]/, // Mudança aqui para aceitar qualquer dígito
       }}
+      inputRef={ref}
+      onAccept={(value: any) => onChange({ target: { name: props.name, value } })}
     />
   );
 });
 
-const Contato = () => {
+const Contato: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-          <title>The King of Boxes - Contato</title>
+        <title>The King of Boxes - Contato</title>
       </Head>
       <div className={styles.bannerContainer}>
-        <Image className={styles.banner} src={contatoBanner} quality={100}/>
-        <Image className={styles.bannerMB} src={contatoBannerMB} quality={100}/>
+        <Image className={styles.banner} src={contatoBanner} quality={100} alt="Contato Banner" />
+        <Image className={styles.bannerMB} src={contatoBannerMB} quality={100} alt="Contato Banner Mobile" />
       </div>
       <div className={styles.subContainer}>
         <div className={styles.infoContato}>
-            <div>
-              <h1>ONDE ESTAMOS</h1>
-              <br/>
-              <p>Escritório: Rua Leonídio Porcionato, 58<br/>
-              Bairro Parque Tomas Saraiva<br/>
-              São Paulo – SP CEP: 03280-040<br/>
-              E-mail: contato@thekingofboxes.com.br<br/>
-              WhatsApp: (11) 2717-3954 <br/>
-              Horário de Funcionamento:<br/>
-              -De segunda-feira a quinta-feira 07:00-17:00<br/>
-              -De sexta-feira 07:00-16:00</p>
-              <br/>
-              <br/>
-            </div>
-            <div>
-              <h1>SOCIAL</h1>
-              <br/>
-              <div className={styles.socialMedia}>
+          <div>
+            <h1>ONDE ESTAMOS</h1>
+            <br />
+            <p>
+              Escritório: Rua Leonídio Porcionato, 58
+              <br />
+              Bairro Parque Tomas Saraiva
+              <br />
+              São Paulo – SP CEP: 03280-040
+              <br />
+              E-mail: contato@thekingofboxes.com.br
+              <br />
+              WhatsApp: (11) 2717-3954
+              <br />
+              Horário de Funcionamento:
+              <br />
+              -De segunda-feira a quinta-feira 07:00-17:00
+              <br />
+              -De sexta-feira 07:00-16:00
+            </p>
+            <br />
+            <br />
+          </div>
+          <div>
+            <h1>SOCIAL</h1>
+            <br />
+            <div className={styles.socialMedia}>
               <a href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer">
                 <p><WhatsAppIcon /></p>
               </a>
@@ -63,7 +79,8 @@ const Contato = () => {
               </a>
             </div>
           </div>
-          {/* <div className={styles.formulario}>
+          {/* 
+          <div className={styles.formulario}>
             <h1>CONTATO</h1>
             <Box
               component="form"
@@ -81,7 +98,7 @@ const Contato = () => {
                   name="textmask"
                   id="formatted-text-mask-input"
                   InputProps={{
-                    inputComponent: TextMaskCustom,
+                    inputComponent: TextMaskCustom as any,
                   }}
                 />
                 <TextField
@@ -95,10 +112,16 @@ const Contato = () => {
                 </Button>
               </div>
             </Box>
-          </div> */}
+          </div>
+          */}
         </div>
         <div className={styles.maps}>
-          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5734045801246!2d-46.543407125294856!3d-23.583760062414353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5da499b22fad%3A0x8ffdc054e8c7f334!2sR.%20Leon%C3%ADdio%20Porcionato%2C%2058%20-%20Parque%20Tomas%20Saraiva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003280-040%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1682179051267!5m2!1spt-BR!2sus" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          <iframe
+            loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5734045801246!2d-46.543407125294856!3d-23.583760062414353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5da499b22fad%3A0x8ffdc054e8c7f334!2sR.%20Leon%C3%ADdio%20Porcionato%2C%2058%20-%20Parque%20Tomas%20Saraiva%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003280-040%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1682179051267!5m2!1spt-BR!2sus"
+            frameBorder="0"
+            allowFullScreen={true}
+          ></iframe>
         </div>
       </div>
     </div>

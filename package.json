@@ -13,7 +13,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-imask": "^6.6.0-alpha.0",
-    "react-lazy-load-image-component": "^1.5.6",
+    "react-lazy-load-image-component": "^1.6.2",
     "react-material-ui-carousel": "^3.4.2",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
@@ -21,8 +21,9 @@
   },
   "devDependencies": {
     "@types/node": "22.0.0",
+    "@types/react-lazy-load-image-component": "^1.6.4",
+    "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "5.5.4",
-    "postcss": "^8"
+    "typescript": "5.5.4"
   }
 }

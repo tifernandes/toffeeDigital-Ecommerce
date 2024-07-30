@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import styles from'../styles/components/Header.module.css';
-import Image from 'next/image'
+import styles from '../styles/components/Header.module.css';
+import Image from 'next/image';
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import CallIcon from '@mui/icons-material/Call';
@@ -14,34 +14,33 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import BusinessIcon from '@mui/icons-material/Business';
-import Link from 'next/link'
+import Link from 'next/link';
 import { styled, useTheme } from '@mui/material/styles';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Divider from '@mui/material/Divider';
 
-const Header = () => {
-
+const Header: React.FC = () => {
   const [menuMbOpen, setMenuMbOpen] = useState(false);
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const theme = useTheme();
 
   useEffect(() => {
-    window.onscroll = function() {
+    window.onscroll = function () {
       const currentScrollPos = window.pageYOffset;
       if (currentScrollPos < 100) {
-        document.getElementById("containerFix").style.transform = "translateY(-100px)";
+        document.getElementById("containerFix")!.style.transform = "translateY(-100px)";
       } else {
-        document.getElementById("containerFix").style.transform = "translateY(70px)";
+        document.getElementById("containerFix")!.style.transform = "translateY(70px)";
       }
     };
   }, []);
 
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
     if (
       event &&
       event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')
     ) {
       return;
     }
@@ -53,43 +52,40 @@ const Header = () => {
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-start',
   }));
 
-  const NavCmp = () => {
-    return(
-      <>
+  const NavCmp: React.FC = () => (
+    <>
+      <IconButton
+        color="inherit"
+        aria-label="open drawer"
+        edge="end"
+        onClick={toggleDrawer(true)}
+      >
+        <MenuIcon />
+      </IconButton>
 
-        <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          edge="end"
-          onClick={toggleDrawer(true)}
-        >
-          <MenuIcon />
-        </IconButton>
-
-        <SwipeableDrawer
-            PaperProps={{
-              sx: { width: "60%", maxWidth: "400px" },
-            }}
-            anchor="left"
-            open={open}
-            onClose={toggleDrawer(false)}
-            onOpen={toggleDrawer(true)}
-          >
-          <DrawerHeader>
-            <IconButton onClick={toggleDrawer(false)}>
-              {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-            </IconButton>
-          </DrawerHeader>
+      <SwipeableDrawer
+        PaperProps={{
+          sx: { width: "60%", maxWidth: "400px" },
+        }}
+        anchor="left"
+        open={open}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
+      >
+        <DrawerHeader>
+          <IconButton onClick={toggleDrawer(false)}>
+            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+          </IconButton>
+        </DrawerHeader>
         <Divider />
         <List className={styles.menu}>
           <ListItem disablePadding>
-            <Link href="/" onClick={toggleDrawer(false)} passHref>
-              <ListItemButton component="a">
+            <Link href="/" passHref>
+              <ListItemButton component="a" onClick={toggleDrawer(false)}>
                 <ListItemIcon>
                   <HomeIcon />
                 </ListItemIcon>
@@ -98,8 +94,8 @@ const Header = () => {
             </Link>
           </ListItem>
           <ListItem disablePadding>
-            <Link href="/produtos" onClick={toggleDrawer(false)} passHref>
-              <ListItemButton component="a">
+            <Link href="/produtos" passHref>
+              <ListItemButton component="a" onClick={toggleDrawer(false)}>
                 <ListItemIcon>
                   <ShoppingBagIcon />
                 </ListItemIcon>
@@ -108,8 +104,8 @@ const Header = () => {
             </Link>
           </ListItem>
           <ListItem disablePadding>
-            <Link href="/contato" onClick={toggleDrawer(false)} passHref>
-              <ListItemButton component="a">
+            <Link href="/contato" passHref>
+              <ListItemButton component="a" onClick={toggleDrawer(false)}>
                 <ListItemIcon>
                   <CallIcon />
                 </ListItemIcon>
@@ -118,8 +114,8 @@ const Header = () => {
             </Link>
           </ListItem>
           <ListItem disablePadding>
-            <Link href="/sobrenos" onClick={toggleDrawer(false)} passHref>
-              <ListItemButton component="a">
+            <Link href="/sobrenos" passHref>
+              <ListItemButton component="a" onClick={toggleDrawer(false)}>
                 <ListItemIcon>
                   <BusinessIcon />
                 </ListItemIcon>
@@ -136,39 +132,34 @@ const Header = () => {
             </ListItemButton>
           </ListItem>
         </List>
-        </SwipeableDrawer>
-      </>
-    )
-  }
+      </SwipeableDrawer>
+    </>
+  );
 
-  const HeaderCmp = (props) => {
-
-    return (
-      <>
-        <div className={styles.logo}>
-          <a href="/">
-            <Image className={styles.logoImg} alt='logo' src="/logo.png" width={137} height={61}/>
-          </a>
-        </div>
-        <nav className={styles.menuContainer}>
-          <NavCmp />
-        </nav>
-      </>
-    )
-  }
+  const HeaderCmp: React.FC = () => (
+    <>
+      <div className={styles.logo}>
+        <a href="/">
+          <Image className={styles.logoImg} alt='logo' src="/logo.png" width={137} height={61} />
+        </a>
+      </div>
+      <nav className={styles.menuContainer}>
+        <NavCmp />
+      </nav>
+    </>
+  );
 
   return (
     <>
-    <header className={styles.container} id="container">
-      <HeaderCmp />
-    </header>
-
-    {/* NAV BAR FLUTUANTE */}
-    <header className={styles.containerFix} id="containerFix">
-      <div className={styles.subContainerFix}>
+      <header className={styles.container} id="container">
         <HeaderCmp />
-      </div>
-    </header>
+      </header>
+
+      <header className={styles.containerFix} id="containerFix">
+        <div className={styles.subContainerFix}>
+          <HeaderCmp />
+        </div>
+      </header>
     </>
   );
 };

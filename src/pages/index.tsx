@@ -27,10 +27,10 @@ const Home = () => {
           </div>
           <div className={styles.cts}>
             <Link href={'/produtos?ct=Acessorios'}>
-              <Image className={styles.logoImg} src="/acessorios.png" width={328} height={314}/>
+              <Image alt='acessorios' className={styles.logoImg} src="/acessorios.png" width={328} height={314}/>
             </Link>
             <Link href={'/produtos?ct=Expositor'}>
-              <Image className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
+              <Image alt='expositores' className={styles.logoImg} src="/expositores.png" width={328} height={314}/>
             </Link>
             {/* <Link href={'/produtos?ct=organizacao'}>
               <Image className={styles.logoImg} src="/organizacao.png" width={328} height={314}/>
