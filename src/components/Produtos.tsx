@@ -7,6 +7,7 @@ import Alert from '@mui/material/Alert';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useRouter } from 'next/router';
+import { Input } from "@/components/ui/input"
 
 const Produtos = () => {
 
@@ -26,9 +27,29 @@ const Produtos = () => {
       newPrds = prds;
     }
 
+    console.log(prds)
+
     setInitialProducts(newPrds.slice(0, productCount));
     setHasMoreProducts(newPrds.length > productCount);
   }, [productCount])
+
+  const filterProducts = (event: ChangeEvent<HTMLInputElement>) => {
+    const query = event.target.value?.toLowerCase() || '';
+    console.log(query);
+
+    if(query == ''){
+      setHasMoreProducts(true);
+      setInitialProducts(prds.slice(0, productCount));
+      return;
+    }
+
+    const filtered = prds.filter((i) =>
+      i.Id?.toLowerCase().includes(query) || i.produto?.toLowerCase().includes(query)
+    );
+
+    setInitialProducts(filtered);
+    setHasMoreProducts(false);
+  };
   
   return (
     <div className={styles.container}>
@@ -39,6 +60,9 @@ const Produtos = () => {
       </a>
       <div className={styles.produtosTitle}>
         <h2>PRODUTOS</h2>
+      </div>
+      <div className='w-full mb-8'>
+        <Input placeholder="Pesquise pelo nome ou código do produto" onChangeCapture={filterProducts}/>
       </div>
       <div className={styles.produtos}>
         {initialProducts.map((prd) => {

@@ -199,6 +199,19 @@ const produtos = [
     categoria: ['Expositor']
 },
 {
+    Id: 'TKB-0034',
+    produto: 'Case Multiuso',
+    descricao: 'Case para exposição e proteção de miniaturas 1:18, miniaturas 1:24, dioramas entre outros.',
+    medidas: {
+        externas: { altura: 12.3, largura: 16.6, comprimento: 32.6 },
+        internas: { altura: 10.5, largura: 14.0, comprimento: 30.0 },
+    },
+    cores: ['A tampa é transparente e a base é preta.'],
+    itens: ['Base com furações'],
+    imgs: ['IMG_0009B.jpg', 'IMG_0004B.jpg', 'IMG_0021.jpg'],
+    categoria: ['Expositor']
+},
+{
     Id: 'TKB-0020',
     produto: 'Case para Caixa de Funko POP',
     descricao: 'Case para exposição e proteção da caixa de Funko Pop.',
@@ -261,7 +274,7 @@ const produtos = [
     medidas: "46,3 x 31,0 x 4,6 cm",
     cores: ['Branco (TKB-0023-1)', 'Preto (TKB-0023-3)', 'Vermelho (TKB-0023-4)', 'Amarelo (TKB-0023-5)'],
     itensInclusos: "",
-    imgs: ['TKB-0023-1.png', 'EXPOSITOR-VERMELHO-B.jpg', 'EXPOSITOR-PRETO-B.jpg', 'EXPOSITOR-BRANCO-B.jpg', 'EXPOSITOR-AMARELO-B.jpg'],
+    imgs: ['EXPOSITOR-VERMELHO-COM-CARRINHOS.jpg', 'EXPOSITOR CLOSE.jpg', 'TKB-0023-1.png', 'EXPOSITOR-VERMELHO-B.jpg', 'EXPOSITOR-PRETO-B.jpg', 'EXPOSITOR-BRANCO-B.jpg', 'EXPOSITOR-AMARELO-B.jpg'],
     variacao: ['TKB-0023-2'],
     categoria: ['Expositor']
 },
@@ -364,21 +377,21 @@ const produtos = [
 },
 {
     Id: "TKB-0031",
-    produto: "Maleta do colecionador PREMIUM",
+    produto: "Expositor Multicolecionismo",
     descricao: "Expositor com 03 nichos e prateleiras removíveis para exposição e proteção de : Carros 1:64 ( Hotwheels RLC, Tarmac, Kaido House, Br Classics, entre outros). Carros 1:43 / Bonecos / Miniaturas em geral.",
     medidas: {
         externas: { altura: 18.2, largura: 13.5, comprimento: 7.2 },
         nichos: { altura: 5.5, largura: 12.8, comprimento: 6 },
     },
-    cores: ['Aro Transparente (TKB-0031-1)', 'Aro Preto (TKB-0030-2)'],
+    cores: [''],
     itensInclusos: "",
-    imgs: ['IMG_0017-(2).jpg', 'IMG_0013-(1).jpg', 'IMG_0077.jpg', 'IMG_0056.jpg', 'IMG_0009-(2).jpg', 'IMG_0006-(1).jpg', 'IMG_0005(4).jpg', 'IMG_0005-(2).jpg'],
+    imgs: ['IMG_0005-(2).jpg', 'IMG_0017-(2).jpg', 'IMG_0013-(1).jpg', 'IMG_0077.jpg', 'IMG_0056.jpg', 'IMG_0009-(2).jpg', 'IMG_0006-(1).jpg', 'IMG_0005(4).jpg'],
     categoria: ['Expositor']
 },
 {
     Id: "TKB-0032-1",
-    produto: "Expositor Estacionamento para Miniaturas 1:64 e Dioramas",
-    descricao: "10 cones, 3 andares, 8 colunas, 15 proteções dos andares, 8 adesivos para as colunas, 1 adesivo vaga cadeirante e 1 adesivo vaga gestante.",
+    produto: "Expositor Estacionamento",
+    descricao: "Expositor Estacionamento para Miniaturas 1:64 e Dioramas. O kit acompanha: 10 cones, 3 andares, 8 colunas, 15 proteções dos andares, 8 adesivos para as colunas, 1 adesivo vaga cadeirante e 1 adesivo vaga gestante. Obs: Não acompanha as miniaturas.",
     medidas: "23 x 32 x 16 cm",
     cores: [],
     itensInclusos: "",
@@ -387,7 +400,7 @@ const produtos = [
 },
 {
     Id: "TKB-0033-1",
-    produto: "Um expositor empilhável e multicolecionismo",
+    produto: "Expositor Empilhavel",
     descricao: "Um expositor empilhável e multicolecionismo. Possui 02 nichos que são separados por uma divisória que pode ser removida. É possível usar o produto de 02 formas: em pé ou deitado (empilhável).",
     medidas: "5,7 x 10,9 x 10,3 cm",
     cores: ['Transparente'],
