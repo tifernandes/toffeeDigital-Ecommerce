@@ -212,13 +212,36 @@ const produtos = [
     categoria: ['Expositor']
 },
 {
-    Id: "TKB-0021",
+    Id: "TKB-0021-1",
     produto: "Protetor de Cartela 1:64",
-    descricao: "Um protetor de cartelas para miniaturas 1:64 para as marcas: Hotwheels, Matchbox e California minis",
-    medidas: "19,8x 11,8x4,5 cm",
+    descricao: "Um protetor de cartelas para miniaturas 1:64 para as marcas: Hotwheels, Matchbox e California minis.",
+    medidas: "19,3 x 12 x 4,4 cm",
     cores: "Transparente",
     itensInclusos: "",
-    imgs: ['IMG_0040.png', 'IMG_0004.png'],
+    variacao: ['TKB-0021-2', 'TKB-0021-3'],
+    imgs: ['IMG_0034B.jpg', 'IMG_0065B.jpg'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0021-2",
+    produto: "Protetor de Cartela 1:64 HW PREMIUM",
+    descricao: "Um protetor de cartelas para miniaturas Hot Wheels premium. Dentro deste produto é possível colocar o produto TKB-0002. Case 1:64.",
+    medidas: "21 x 15,3 x 6,5 cm",
+    cores: "Transparente",
+    itensInclusos: "",
+    variacao: ['TKB-0021-1', 'TKB-0021-3'],
+    imgs: ['IMG_0037B.jpg', 'IMG_0060B.jpg', 'IMG_0059B.jpg'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0021-3",
+    produto: "Protetor de Cartela 1:64 SET HW PREMIUM",
+    descricao: "Um protetor de cartelas para set de miniaturas Hot Wheels premium (cabem 05 cartelas).",
+    medidas: "47 x 16 x 4,9 cm",
+    cores: "Transparente",
+    itensInclusos: "",
+    variacao: ['TKB-0021-2', 'TKB-0021-1'],
+    imgs: ['TKB-21-3.png', 'IMG_0001.png'],
     categoria: ['Expositor']
 },
 {
@@ -232,14 +255,14 @@ const produtos = [
     categoria: ['Expositor']
 },
 {
-    Id: "TKB-0023-1",
+    Id: "TKB-0023",
     produto: "Expositor com 30 nichos Fechados",
-    descricao: "Um expositor com 30 nichos fechados e individuais",
-    medidas: "46,3x31,0x4,6 cm",
-    cores: "O nicho é transparente e o porta nicho é branco",
+    descricao: "Um expositor com 30 nichos fechados e individuais. O nicho é transparente",
+    medidas: "46,3 x 31,0 x 4,6 cm",
+    cores: ['Branco (TKB-0023-1)', 'Preto (TKB-0023-3)', 'Vermelho (TKB-0023-4)', 'Amarelo (TKB-0023-5)'],
     itensInclusos: "",
-    imgs: ['TKB-0023-1.png', 'TKB-0023-1t.png'],
-    variacao: ['TKB-0023-2','TKB-0023-3'],
+    imgs: ['TKB-0023-1.png', 'EXPOSITOR-VERMELHO-B.jpg', 'EXPOSITOR-PRETO-B.jpg', 'EXPOSITOR-BRANCO-B.jpg', 'EXPOSITOR-AMARELO-B.jpg'],
+    variacao: ['TKB-0023-2'],
     categoria: ['Expositor']
 },
 {
@@ -250,18 +273,7 @@ const produtos = [
     cores: "Transparente",
     itensInclusos: "",
     imgs: ['TKB-0023-2.png', 'TKB-0023-2p.png'],
-    variacao: ['TKB-0023-1','TKB-0023-3'],
-    categoria: ['Expositor']
-},
-{
-    Id: "TKB-0023-3",
-    produto: "Expositor com 30 nichos fechados.",
-    descricao: "Um expositor com 30 nichos fechados e individuais.",
-    medidas: "(AxLxC): 46,3x31,0x4,6 cm",
-    cores: "O nicho é transparente e o porta nicho é preto.",
-    itensInclusos: "",
-    imgs: ['1.png', '2.png'],
-    variacao: ['TKB-0023-1','TKB-0023-2'],
+    variacao: ['TKB-0023'],
     categoria: ['Expositor']
 },
 {
@@ -323,12 +335,15 @@ const produtos = [
         nichos: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
     },
     cores: [
-        "Transparente(TKB-0029-1)",
-        "Verde Escuro(TKB-0029-2)",
-        "Amarelo(TKB-0029-3)",
-        "Azul Escuro(TKB-0029-4)",
-        "Vermelho(TKB-0029-5)",
-        "Roxo(TKB-0029-6)"
+        "Transparente (TKB-0029-1)",
+        "Verde Escuro (TKB-0029-2)",
+        "Amarelo (TKB-0029-3)",
+        "Azul Escuro (TKB-0029-4)",
+        "Vermelho (TKB-0029-5)",
+        "Roxo (TKB-0029-6)",
+        "Preto (TKB-0029-7)",
+        "Rosa (TKB-0029-8)",
+        "Laranja (TKB-0029-9)",
       ],
     itensInclusos: "",
     imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg'],
@@ -342,9 +357,42 @@ const produtos = [
         externas: { altura: 4.3, largura: 29.5, comprimento: 41.5 },
         nichos: { altura: 3.8, largura: 8.9, comprimento: 4.5 },
     },
-    cores: ['Transparente(TKB-0030-1)', 'Verde Escuro(TKB-0030-2)', 'Amarelo(TKB-0030-3)', 'Azul Escuro(TKB-0030-4)', 'Vermelho(TKB-0030-5)', 'Roxo(TKB-0030-6)'],
+    cores: ['Transparente (TKB-0030-1)', 'Verde Escuro (TKB-0030-2)', 'Amarelo (TKB-0030-3)', 'Azul Escuro (TKB-0030-4)', 'Vermelho (TKB-0030-5)', 'Roxo (TKB-0030-6)', 'Preto (TKB-0030-7)', 'Rosa (TKB-0030-8)'],
     itensInclusos: "",
     imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0031",
+    produto: "Maleta do colecionador PREMIUM",
+    descricao: "Expositor com 03 nichos e prateleiras removíveis para exposição e proteção de : Carros 1:64 ( Hotwheels RLC, Tarmac, Kaido House, Br Classics, entre outros). Carros 1:43 / Bonecos / Miniaturas em geral.",
+    medidas: {
+        externas: { altura: 18.2, largura: 13.5, comprimento: 7.2 },
+        nichos: { altura: 5.5, largura: 12.8, comprimento: 6 },
+    },
+    cores: ['Aro Transparente (TKB-0031-1)', 'Aro Preto (TKB-0030-2)'],
+    itensInclusos: "",
+    imgs: ['IMG_0017-(2).jpg', 'IMG_0013-(1).jpg', 'IMG_0077.jpg', 'IMG_0056.jpg', 'IMG_0009-(2).jpg', 'IMG_0006-(1).jpg', 'IMG_0005(4).jpg', 'IMG_0005-(2).jpg'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0032-1",
+    produto: "Expositor Estacionamento para Miniaturas 1:64 e Dioramas",
+    descricao: "10 cones, 3 andares, 8 colunas, 15 proteções dos andares, 8 adesivos para as colunas, 1 adesivo vaga cadeirante e 1 adesivo vaga gestante.",
+    medidas: "23 x 32 x 16 cm",
+    cores: [],
+    itensInclusos: "",
+    imgs: ['IMG_0006.png', 'IMG_0010-com-cones.png', 'IMG_0013.png', 'IMG_0012.png'],
+    categoria: ['Expositor']
+},
+{
+    Id: "TKB-0033-1",
+    produto: "Um expositor empilhável e multicolecionismo",
+    descricao: "Um expositor empilhável e multicolecionismo. Possui 02 nichos que são separados por uma divisória que pode ser removida. É possível usar o produto de 02 formas: em pé ou deitado (empilhável).",
+    medidas: "5,7 x 10,9 x 10,3 cm",
+    cores: ['Transparente'],
+    itensInclusos: "",
+    imgs: ['IMG_0002.jpg', 'IMG_0010.jpg', 'IMG_0015.jpg', 'IMG_0017.jpg', 'IMG_0025_.jpg', 'IMG_0029.jpg', 'IMG_0031.jpg', 'IMG_0042.jpg', 'IMG_0061.jpg', 'IMG_0063.jpg'],
     categoria: ['Expositor']
 }
 ];

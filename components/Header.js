@@ -37,16 +37,6 @@ const Header = () => {
     };
   }, []);
 
-  const onClick = () => {
-    setMenuMbOpen(!menuMbOpen);
-
-    if(menuMbOpen){
-      document.getElementById("menuMbShow").style.transform = "translateY(70px)";
-    }else {
-      document.getElementById("menuMbShow").style.transform = "translateY(-100px)";
-    }
-  }
-
   const toggleDrawer = (open) => (event) => {
     if (
       event &&
@@ -96,58 +86,56 @@ const Header = () => {
             </IconButton>
           </DrawerHeader>
         <Divider />
-          <List className={styles.menu}>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <Link href="/" onClick={toggleDrawer(false)}>
-                    <ListItemIcon>
-                      <HomeIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Início" />
-                  </Link>
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <Link href="/produtos" onClick={toggleDrawer(false)}>
-                    <ListItemIcon>
-                      <ShoppingBagIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Produtos" />
-                  </Link>
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <Link href="/contato" onClick={toggleDrawer(false)}>
-                    <ListItemIcon>
-                      <CallIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Contato" />
-                  </Link>
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <Link href="/sobrenos" onClick={toggleDrawer(false)}>
-                    <ListItemIcon>
-                      <BusinessIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Sobre nós" />
-                  </Link>
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton>
-                  <a href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m" target="_blank" rel="noopener noreferrer">
-                    <ListItemIcon>
-                      <ListAltIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Catálogo" />
-                  </a>
-                </ListItemButton>
-              </ListItem>
-          </List>
+        <List className={styles.menu}>
+          <ListItem disablePadding>
+            <Link href="/" onClick={toggleDrawer(false)} passHref>
+              <ListItemButton component="a">
+                <ListItemIcon>
+                  <HomeIcon />
+                </ListItemIcon>
+                <ListItemText primary="Início" />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+          <ListItem disablePadding>
+            <Link href="/produtos" onClick={toggleDrawer(false)} passHref>
+              <ListItemButton component="a">
+                <ListItemIcon>
+                  <ShoppingBagIcon />
+                </ListItemIcon>
+                <ListItemText primary="Produtos" />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+          <ListItem disablePadding>
+            <Link href="/contato" onClick={toggleDrawer(false)} passHref>
+              <ListItemButton component="a">
+                <ListItemIcon>
+                  <CallIcon />
+                </ListItemIcon>
+                <ListItemText primary="Contato" />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+          <ListItem disablePadding>
+            <Link href="/sobrenos" onClick={toggleDrawer(false)} passHref>
+              <ListItemButton component="a">
+                <ListItemIcon>
+                  <BusinessIcon />
+                </ListItemIcon>
+                <ListItemText primary="Sobre nós" />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m" target="_blank" rel="noopener noreferrer">
+              <ListItemIcon>
+                <ListAltIcon />
+              </ListItemIcon>
+              <ListItemText primary="Catálogo" />
+            </ListItemButton>
+          </ListItem>
+        </List>
         </SwipeableDrawer>
       </>
     )
@@ -172,8 +160,10 @@ const Header = () => {
   return (
     <>
     <header className={styles.container} id="container">
-      <HeaderCmp hideMenu={true} />
+      <HeaderCmp />
     </header>
+
+    {/* NAV BAR FLUTUANTE */}
     <header className={styles.containerFix} id="containerFix">
       <div className={styles.subContainerFix}>
         <HeaderCmp />
