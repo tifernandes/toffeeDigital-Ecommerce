@@ -61,8 +61,8 @@ const Produtos = () => {
       <div className={styles.produtosTitle}>
         <h2>PRODUTOS</h2>
       </div>
-      <div className='w-full mb-8'>
-        <Input placeholder="Pesquise pelo nome ou código do produto" onChangeCapture={filterProducts}/>
+      <div className='w-full mb-8 flex items-center justify-center'>
+        <Input className='w-[90%] sm:w-full' placeholder="Pesquise pelo nome ou código do produto" onChangeCapture={filterProducts}/>
       </div>
       <div className={styles.produtos}>
         {initialProducts.map((prd) => {
