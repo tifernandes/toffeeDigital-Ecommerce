@@ -29,7 +29,7 @@ interface Product {
 const Produtos: React.FC = () => {
   const router = useRouter();
   const { i } = router.query; 
-  const [productCount, setProductCount] = useState(8);
+  const [productCount, setProductCount] = useState(12);
   const [initialProducts, setInitialProducts] = useState<Product[]>([]);
   const [hasMoreProducts, setHasMoreProducts] = useState(false);
 
