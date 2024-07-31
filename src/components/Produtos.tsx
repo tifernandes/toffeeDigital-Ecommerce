@@ -8,6 +8,16 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useRouter } from 'next/router';
 import { Input } from '@/components/ui/input';
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 interface Product {
   Id: string;
@@ -70,7 +80,33 @@ const Produtos: React.FC = () => {
       <div className={styles.produtos}>
         {initialProducts.map((prd) => (
           <Link key={prd.Id} href={'/produto?i=' + prd.Id}>
-            <div className={styles.produto}>
+            <Card className='max-h-[500px] h-full'>
+              <CardHeader>
+                <CardTitle>{prd.produto}</CardTitle>
+                <CardDescription>{prd.categoria.map((i) => {
+                  return(
+                    <>{i} </>
+                  )
+                })}</CardDescription>
+              </CardHeader>
+              <CardContent>
+              <div className="w-full relative">
+                <AspectRatio ratio={2 / 2}>
+                  {prd.imgs && 
+                    <LazyLoadImage
+                      effect="blur"
+                      className="w-full h-full object-cover absolute top-0 left-0"
+                      src={'/produtos/' + prd.Id + '/' + prd.imgs[0]}
+                      width={'100%'}
+                      height={'100%'}
+                    />
+                  }
+                </AspectRatio>
+                <p className='text-slate-400 text-sm'>{prd.Id}</p>
+                </div>
+              </CardContent>
+            </Card>
+            {/* <div className={styles.produto}>
               <div className={styles.prdImg}>
                 {prd.imgs && 
                   <LazyLoadImage
@@ -86,7 +122,7 @@ const Produtos: React.FC = () => {
                 <h3>{prd.produto}</h3>
                 <p>{prd.Id}</p>
               </div>
-            </div>
+            </div> */}
           </Link>
         ))}
       </div>
