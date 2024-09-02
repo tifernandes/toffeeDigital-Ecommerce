@@ -264,7 +264,7 @@ const produtos = [
     medidas: "Com o pendurador aberto (AxLxC): 3,3x4,3x9,9 cm / Com o pendurador dobrado (AxLxC): 3,3x4,3x8,7 cm",
     cores: "Translucido",
     itensInclusos: "",
-    imgs: ['tkb-0022a.png', 'tkb-0022.png'],
+    imgs: ['IMG_0003.jpg', 'IMG_0006.jpg', 'IMG_0009.jpg','tkb-0022a.png', 'tkb-0022.png'],
     categoria: ['Expositor']
 },
 {
@@ -359,7 +359,7 @@ const produtos = [
         "Laranja (TKB-0029-9)",
       ],
     itensInclusos: "",
-    imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg'],
+    imgs: ['capa.jpg', 'amarela.jpg',  'laranja.jpg', 'preta.jpg', 'rosa.jpg', 'roxa.jpg', 'transp.jpg', 'verde.jpg', 'vermelha.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg'],
     categoria: ['Expositor']
 },
 {
@@ -372,7 +372,7 @@ const produtos = [
     },
     cores: ['Transparente (TKB-0030-1)', 'Verde Escuro (TKB-0030-2)', 'Amarelo (TKB-0030-3)', 'Azul Escuro (TKB-0030-4)', 'Vermelho (TKB-0030-5)', 'Roxo (TKB-0030-6)', 'Preto (TKB-0030-7)', 'Rosa (TKB-0030-8)'],
     itensInclusos: "",
-    imgs: ['capa.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'],
+    imgs: ['capa.jpg', 'img1.jpg', 'MALETA-AMARELA_PREMIUM2.jpg', 'MALETA-PRETA_PREMIUM.jpg', 'MALETA-ROSA_PREMIUM2.jpg', 'MALETA-ROXA_PREMIUM2.jpg', 'MALETA-TRANSPARENTE_PREMIUM2.jpg', 'MALETA-VERDE_PREMIUM.jpg', 'MALETA-VERMELHA_PREMIUM2.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'],
     categoria: ['Expositor']
 },
 {
