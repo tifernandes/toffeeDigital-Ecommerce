@@ -26,6 +26,7 @@ import {
 import produtos from "@/dumDB/produtos";
 import VerticalSlider from "@/components/VerticalSlider";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   // Group products by category
@@ -82,21 +83,30 @@ export default function Home() {
                   sua coleção. Feitos por colecionadores, para colecionadores.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 sm:pt-6">
-                  <Button
-                    size="lg"
-                    className="w-full sm:w-auto bg-yellow-400 text-blue-900 hover:bg-yellow-300 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
+                  <a 
+                    href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
                   >
-                    Conheça o Catálogo
-                    <ChevronRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
-                  </Button>
-                  <Button
-                    size="lg"
-                    className="w-full sm:w-auto bg-transparent border-2 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 transition-colors"
-                    variant="outline"
-                  >
-                    Fale Conosco
-                    <Phone className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
-                  </Button>
+                    <Button
+                      size="lg"
+                      className="w-full bg-yellow-400 text-blue-900 hover:bg-yellow-300 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
+                    >
+                      Conheça o Catálogo
+                      <ChevronRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
+                    </Button>
+                  </a>
+                  
+                  <Link href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                    <Button
+                      size="lg"
+                      className="w-full bg-transparent border-2 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 transition-colors"
+                    >
+                      Fale Conosco
+                      <Phone className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
+                    </Button>
+                  </Link>
                 </div>
               </motion.div>
 
@@ -430,7 +440,8 @@ export default function Home() {
                           (11) 2717-3954
                         </p>
                         <p className="text-xs sm:text-sm text-gray-500">
-                          Segunda a Sexta, 9h-18h
+                          Segunda-feira a quinta-feira 07:00-17:00
+                          Sexta-feira 07:00-16:00
                         </p>
                       </div>
                     </div>
