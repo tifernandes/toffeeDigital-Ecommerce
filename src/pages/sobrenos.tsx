@@ -16,7 +16,11 @@ const SobreNos = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Head>
-        <title>The King of Boxes - Sobre Nós</title>
+        <title>Sobre Nós | The King of Boxes - Nossa História</title>
+        <meta name="description" content="Conheça a história da The King of Boxes, empresa 100% nacional especializada em expositores para colecionáveis há mais de 40 anos." />
+        <meta name="keywords" content="sobre nós, história, missão, visão, valores, The King of Boxes" />
+        <meta property="og:title" content="Sobre Nós | The King of Boxes" />
+        <meta property="og:description" content="Empresa especializada em expositores para colecionáveis com mais de 40 anos de experiência." />
       </Head>
 
       {/* Hero Section */}

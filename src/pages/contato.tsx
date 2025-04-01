@@ -36,7 +36,11 @@ const Contato: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>The King of Boxes - Contato</title>
+        <title>Contato | The King of Boxes - Expositores Premium</title>
+        <meta name="description" content="Entre em contato com a The King of Boxes. Estamos prontos para atender suas necessidades em expositores e cases para colecionáveis." />
+        <meta name="keywords" content="contato, localização, atendimento, The King of Boxes, expositores" />
+        <meta property="og:title" content="Contato | The King of Boxes" />
+        <meta property="og:description" content="Entre em contato com a The King of Boxes. Atendimento especializado para colecionadores." />
       </Head>
       <div className={styles.bannerContainer}>
         <Image className={styles.banner} src={contatoBanner} quality={100} alt="Contato Banner" />

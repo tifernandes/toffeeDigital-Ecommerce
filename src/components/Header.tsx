@@ -200,7 +200,7 @@ const Header: React.FC = () => {
   const HeaderCmp: React.FC = () => (
     <BackgroundGradient className="container mx-auto px-4 flex items-center justify-between h-full bg-white/80 backdrop-blur-sm">
       <div className={styles.logo}>
-        <Link href="/sobrenos">
+        <Link href="/">
           <Image
             className={styles.logoImg}
             alt="logo"

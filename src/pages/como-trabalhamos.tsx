@@ -12,7 +12,11 @@ const ComoTrabalhamos = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Head>
-        <title>The King of Boxes - Como Trabalhamos</title>
+        <title>Como Trabalhamos | The King of Boxes - Processo de Compra</title>
+        <meta name="description" content="Saiba como funciona nosso processo de vendas no atacado, informações necessárias para orçamentos e formas de pagamento." />
+        <meta name="keywords" content="como comprar, processo de compra, atacado, The King of Boxes" />
+        <meta property="og:title" content="Como Trabalhamos | The King of Boxes" />
+        <meta property="og:description" content="Informações sobre nosso processo de vendas e atendimento no atacado." />
       </Head>
 
       {/* Hero Section */}
