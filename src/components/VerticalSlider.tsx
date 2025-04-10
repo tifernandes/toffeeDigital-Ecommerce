@@ -4,17 +4,36 @@ import { HTMLAttributes, useEffect, useRef, useState } from 'react'
 import { useInView } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import produtos from '@/dumDB/produtos'
 
 // Função para gerar array de imagens dos produtos
 const generateProductImages = () => {
-  return produtos.reduce((acc: string[], produto) => {
-    // Pega a primeira imagem de cada produto
-    if (produto.imgs && produto.imgs.length > 0) {
-      acc.push(`/produtos/${produto.Id}/${produto.imgs[0]}`);
-    }
-    return acc;
-  }, []);
+  return [
+    '/produtos/verticalSlider/IMG_0006.jpg',
+    '/produtos/verticalSlider/IMG_0005(4).jpg',
+    '/produtos/verticalSlider/IMG_0002.jpg',
+    '/produtos/verticalSlider/EXPOSITOR-VERMELHO-COM-CARRINHOS.jpg',
+    '/produtos/verticalSlider/EXPOSITOR-BRANCO-B.jpg',
+    '/produtos/verticalSlider/TKB0029.jpg',
+    '/produtos/verticalSlider/IMG_00310036.jpg',
+    '/produtos/verticalSlider/IMG_0068.jpg',
+    '/produtos/verticalSlider/IMG_0060B.jpg',
+    '/produtos/verticalSlider/IMG_0060_C-BASE_B.jpg',
+    '/produtos/verticalSlider/IMG_0052 (2).jpg',
+    '/produtos/verticalSlider/IMG_0046.jpg',
+    '/produtos/verticalSlider/IMG_0044.jpg',
+    '/produtos/verticalSlider/IMG_0043 (2).jpg',
+    '/produtos/verticalSlider/IMG_0035.jpg',
+    '/produtos/verticalSlider/IMG_0034B.jpg',
+    '/produtos/verticalSlider/IMG_0032.jpg',
+    '/produtos/verticalSlider/IMG_0026.jpg',
+    '/produtos/verticalSlider/IMG_0023.png',
+    '/produtos/verticalSlider/IMG_0021B.jpg',
+    '/produtos/verticalSlider/IMG_0018.png',
+    '/produtos/verticalSlider/IMG_0013-(1).jpg',
+    '/produtos/verticalSlider/IMG_0009B.jpg',
+    '/produtos/verticalSlider/IMG_0008.jpg',
+    '/produtos/verticalSlider/IMG_0006-(1).jpg',
+  ];
 };
 
 const IMAGES = generateProductImages();
