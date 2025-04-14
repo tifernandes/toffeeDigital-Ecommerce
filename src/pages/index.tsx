@@ -418,7 +418,7 @@ export default function Home() {
                 </p>
               </motion.div>
 
-              <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-1 gap-6 sm:gap-8 md:gap-12 max-w-5xl mx-auto">
                 {/* Card de Contatos */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -431,7 +431,7 @@ export default function Home() {
                   </h3>
                   <div className="space-y-4 sm:space-y-6">
                     {/* Informações de contato */}
-                    <div className="flex items-start p-3 sm:p-4 bg-gray-50 rounded-xl">
+                    <div className="flex items-center p-3 sm:p-4 bg-gray-50 rounded-xl">
                       <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-blue-900 mr-3 sm:mr-4 mt-1" />
                       <div className="flex-1 min-w-0">
                         {" "}
@@ -492,56 +492,6 @@ export default function Home() {
                         </Button>
                     </a>
                   </div>
-                </motion.div>
-
-                {/* Formulário */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg"
-                >
-                  <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-blue-900">
-                    Envie uma mensagem
-                  </h3>
-                  <form className="space-y-4 sm:space-y-6">
-                    <div>
-                      <label className="block text-sm font-medium mb-2 text-gray-700">
-                        Nome
-                      </label>
-                      <input
-                        type="text"
-                        className="w-full p-2 sm:p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all text-sm sm:text-base"
-                        placeholder="Seu nome"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2 text-gray-700">
-                        E-mail
-                      </label>
-                      <input
-                        type="email"
-                        className="w-full p-2 sm:p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all text-sm sm:text-base"
-                        placeholder="Seu e-mail"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2 text-gray-700">
-                        Mensagem
-                      </label>
-                      <textarea
-                        className="w-full p-2 sm:p-3 border border-gray-200 rounded-xl h-24 sm:h-32 focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all text-sm sm:text-base"
-                        placeholder="Como podemos ajudar?"
-                      ></textarea>
-                    </div>
-                    <Button
-                      size="lg"
-                      className="w-full bg-blue-900 hover:bg-blue-800 text-base sm:text-lg py-4 sm:py-6"
-                    >
-                      Enviar mensagem
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </form>
                 </motion.div>
               </div>
             </div>
