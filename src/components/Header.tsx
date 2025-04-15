@@ -168,6 +168,28 @@ const Header: React.FC = () => {
               <ListItemText primary="Baixar Catálogo" />
             </ListItemButton>
           </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton
+              component="a"
+              href="https://wa.me/message/6FZ3YWIMM7XWF1"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                "&:hover": {
+                  backgroundColor: "#1e3a8a",
+                  color: "white",
+                  "& .MuiListItemIcon-root": {
+                    color: "white",
+                  },
+                },
+              }}
+            >
+              <ListItemIcon>
+                <FileDownloadIcon />
+              </ListItemIcon>
+              <ListItemText primary="Fale Conosco" />
+            </ListItemButton>
+          </ListItem>
         </List>
       </SwipeableDrawer>
     </>
@@ -190,6 +212,11 @@ const Header: React.FC = () => {
           {
             name: "Baixar Catálogo",
             link: "https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m",
+            icon: <FileDownloadIcon className="h-5 w-5" />,
+          },
+          {
+            name: "Fale Conosco",
+            link: "https://wa.me/message/6FZ3YWIMM7XWF1",
             icon: <FileDownloadIcon className="h-5 w-5" />,
           },
         ]}
