@@ -112,17 +112,17 @@ const SobreNos = () => {
               </h2>
               <ul className="grid md:grid-cols-2 gap-4 mb-8">
                 {[
-                  "Expositores/cases para Action Figures",
-                  "Expositores/cases para Funko pop",
-                  "Expositores/cases para miniaturas de carros escala 1:64",
-                  "Expositores/cases para miniaturas de carros escala 1:43",
-                  "Expositores/cases para miniaturas de carros escala 1:32",
-                  "Expositores/cases para miniaturas de carros escala 1:24",
-                  "Expositores/cases para miniaturas de carros escala 1:18",
-                  "Expositores/cases para Dioramas e cenários",
+                  "Expositores/ cases para miniaturas de carros escala 1:64",
+                  "Expositores/ cases para miniaturas de carros escala 1:43",
+                  "Expositores/ cases para miniaturas de carros escala 1:38",
+                  "Expositores/ cases para miniaturas de carros escala 1:24",
+                  "Expositores/ cases para miniaturas de carros escala 1:18",
+                  "Expositores/ cases para Action Figures",
+                  "Expositores/ cases para Bonecos",
+                  "Expositores/ cases para Funko pop e Bitty Pop",
+                  "Expositores/ cases para Dioramas e cenários",
                   "Acessórios para dioramas",
                   "Maletas para o colecionismo e organização",
-                  "Caixas plásticas",
                   "Entre outros",
                 ].map((item, index) => (
                   <motion.li
