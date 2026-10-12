@@ -17,10 +17,10 @@ const SobreNos = () => {
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Head>
         <title>Sobre Nós | The King of Boxes - Nossa História</title>
-        <meta name="description" content="Conheça a história da The King of Boxes, empresa 100% nacional especializada em expositores para colecionáveis há mais de 40 anos." />
-        <meta name="keywords" content="sobre nós, história, missão, visão, valores, The King of Boxes" />
+        <meta name="description" content="Conheça a The King of Boxes, fabricante de deck boxes, cases, expositores e acessórios para TCG e colecionáveis, com mais de 43 anos de experiência na transformação de plásticos." />
+        <meta name="keywords" content="sobre nós, fabricante, deck boxes, cases, expositores, TCG, colecionáveis, The King of Boxes" />
         <meta property="og:title" content="Sobre Nós | The King of Boxes" />
-        <meta property="og:description" content="Empresa especializada em expositores para colecionáveis com mais de 40 anos de experiência." />
+        <meta property="og:description" content="Fabricante de deck boxes, cases e expositores para TCG e colecionáveis, com mais de 43 anos de experiência." />
       </Head>
 
       {/* Hero Section */}
@@ -37,9 +37,11 @@ const SobreNos = () => {
               Sobre a <span className="text-yellow-400">The King of Boxes</span>
             </h1>
             <p className="text-xl opacity-90 leading-relaxed">
-              A <strong>The King of Boxes</strong> é uma empresa 100% nacional
-              fabricante e especializada em expositores para colecionáveis e
-              caixas para organização.
+              A <strong>The King of Boxes</strong> é fabricante de deck boxes,
+              cases, expositores e acessórios para TCG e colecionáveis,
+              desenvolvendo soluções premium para empresas que buscam produtos
+              com elevado padrão de qualidade, durabilidade e excelente
+              acabamento.
             </p>
           </motion.div>
         </div>
@@ -57,54 +59,76 @@ const SobreNos = () => {
               className="prose prose-lg max-w-4xl mx-auto"
             >
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Nós produzimos produtos para colecionadores exigentes. Tais
-                produtos são cuidadosamente projetados e fabricados, além de
-                serem feitos com materiais de altíssima qualidade.
+                A <strong>The King of Boxes</strong> é fabricante de deck boxes,
+                cases, expositores e acessórios para TCG e colecionáveis,
+                desenvolvendo soluções premium para empresas que buscam produtos
+                com elevado padrão de qualidade, durabilidade e excelente
+                acabamento.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Temos nossa própria ferramentaria e injeção de plásticos para a
-                fabricação dos nossos produtos, onde podemos acompanhar cada
-                passo desde a produção até a sua entrega. Contamos com mais de
-                40 anos de Know-How nestes seguimentos.
+                Todos os nossos produtos são cuidadosamente projetados e
+                produzidos com matérias-primas selecionadas, garantindo proteção,
+                organização e valorização das coleções.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Nosso objetivo é agregar no mundo do colecionismo e fazer com
-                que o mesmo cresça cada vez mais.
+                Contamos com estrutura própria de ferramentaria e injeção
+                plástica, o que nos permite controlar todo o processo produtivo,
+                desde o desenvolvimento até a entrega final. Essa autonomia
+                garante rigoroso controle de qualidade, maior agilidade na
+                produção e constante inovação.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Estamos abertos para novas parcerias. Nós trabalhamos somente
-                com vendas no atacado.
+                Com mais de 43 anos de experiência no segmento de transformação
+                de plásticos, reunimos conhecimento técnico e expertise para
+                oferecer soluções confiáveis e competitivas ao mercado de
+                colecionáveis.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Visite também:
+                Nosso propósito é contribuir para o crescimento do colecionismo,
+                desenvolvendo produtos que agreguem valor aos negócios de nossos
+                parceiros e fortaleçam o mercado com soluções diferenciadas e de
+                alto padrão.
+              </p>
+
+              <h2 className="text-2xl font-bold text-blue-900 mb-6">
+                Parcerias Comerciais
+              </h2>
+
+              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                A <strong>The King of Boxes</strong> atua exclusivamente no
+                mercado atacadista, atendendo lojistas, distribuidores e
+                revendedores em todo o Brasil.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Instagram:{" "}
-                <a
-                  href="https://www.instagram.com/thekingofboxes_"
-                  className="text-blue-900 hover:text-blue-700"
-                >
-                  @thekingofboxes_
-                </a>
+                Não realizamos vendas no varejo.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Continue nos acompanhando para saber sempre das novidades, novos
-                produtos, parcerias e mais.
+                Estamos sempre em busca de novas parcerias comerciais com
+                empresas que desejam ampliar seu portfólio com produtos
+                inovadores, desenvolvidos para atender às necessidades do
+                crescente mercado de TCG e colecionáveis.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Mantenha as suas coleções sempre organizadas e protegidas com a{" "}
-                <strong>The King of Boxes</strong>.
+                Desenvolvemos constantemente novos produtos e oportunidades para
+                ajudar nossos parceiros a oferecerem mais valor aos seus clientes
+                e se destacarem em seus mercados.
               </p>
 
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                <strong>De colecionador para colecionador!</strong>
+                Acompanhe nossos lançamentos e descubra como a The King of Boxes
+                pode contribuir para o crescimento do seu negócio.
+              </p>
+
+              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                Se você é lojista, distribuidor ou revendedor, entre em contato
+                conosco e conheça nossas condições especiais para atacado.
               </p>
 
               <h2 className="text-2xl font-bold text-blue-900 mb-6">

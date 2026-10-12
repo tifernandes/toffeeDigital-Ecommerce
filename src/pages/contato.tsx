@@ -11,6 +11,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import contatoBanner from '../../public/contatoBanner.svg';
 import contatoBannerMB from '../../public/contatoBannerMB.svg';
+import { WHATSAPP_URL } from '@/lib/site';
+import { trackLeadConversion } from '@/lib/gtag';
 
 interface CustomProps {
   onChange: (event: { target: { name: string; value: string } }) => void;
@@ -75,7 +77,7 @@ const Contato: React.FC = () => {
             <h1>SOCIAL</h1>
             <br />
             <div className={styles.socialMedia}>
-              <a href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackLeadConversion()}>
                 <p><WhatsAppIcon /></p>
               </a>
               <a href="https://www.instagram.com/thekingofboxes_/" target="_blank" rel="noopener noreferrer">

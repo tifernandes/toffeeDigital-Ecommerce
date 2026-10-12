@@ -6,6 +6,8 @@ import { IconButton } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import { WHATSAPP_URL, INSTAGRAM_URL } from '@/lib/site';
+import { trackLeadConversion } from '@/lib/gtag';
 
 const Footer: React.FC = () => {
   return (
@@ -25,9 +27,10 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex space-x-4">
               <IconButton
-                href="https://wa.me/message/6FZ3YWIMM7XWF1"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackLeadConversion()}
                 sx={{
                   color: 'white',
                   backgroundColor: 'rgba(255, 255, 255, 0.1)',
@@ -39,7 +42,7 @@ const Footer: React.FC = () => {
                 <WhatsAppIcon />
               </IconButton>
               <IconButton
-                href="https://www.instagram.com/thekingofboxes_/"
+                href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
