@@ -29,7 +29,9 @@ import { trackLeadConversion } from "@/lib/gtag";
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery("(max-width:768px)");
+  // Menu completo só cabe a partir de ~1024px (5 itens + CTA + logo).
+  // Abaixo disso usamos o drawer (hambúrguer).
+  const isMobile = useMediaQuery("(max-width:1023px)");
 
   useEffect(() => {
     window.onscroll = function () {
@@ -74,7 +76,6 @@ const Header: React.FC = () => {
         edge="end"
         onClick={toggleDrawer(true)}
         sx={{
-          display: { xs: "flex", md: "none" },
           color: "#1e3a8a", // blue-900
         }}
       >
@@ -251,33 +252,16 @@ const Header: React.FC = () => {
   );
 
   const DesktopMenu = () => (
-    <div className="hidden md:flex items-center space-x-4">
+    <div className="hidden lg:flex items-center gap-3">
       <FloatingNav
         navItems={[
-          {
-            name: "Sobre nós",
-            link: "/sobrenos",
-            icon: <BusinessIcon className="h-5 w-5" />,
-          },
-          {
-            name: "Como Trabalhamos",
-            link: "/como-trabalhamos",
-            icon: <ConstructionIcon className="h-5 w-5" />,
-          },
-          {
-            name: "Parceiros",
-            link: "/parceiros",
-            icon: <StorefrontIcon className="h-5 w-5" />,
-          },
-          {
-            name: "Baixar Catálogo",
-            link: CATALOGO_URL,
-            icon: <FileDownloadIcon className="h-5 w-5" />,
-          },
+          { name: "Sobre nós", link: "/sobrenos" },
+          { name: "Como Trabalhamos", link: "/como-trabalhamos" },
+          { name: "Parceiros", link: "/parceiros" },
+          { name: "Baixar Catálogo", link: CATALOGO_URL },
           {
             name: "Fale Conosco",
             link: WHATSAPP_URL,
-            icon: <FileDownloadIcon className="h-5 w-5" />,
             onClick: () => trackLeadConversion(),
           },
         ]}
@@ -287,9 +271,9 @@ const Header: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackLeadConversion()}
-        className="inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-bold text-blue-900 shadow-sm transition-colors hover:bg-yellow-300"
+        className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-lg bg-yellow-400 px-4 py-2 text-sm font-bold text-blue-900 shadow-sm transition-colors hover:bg-yellow-300"
       >
-        <HandshakeIcon className="h-5 w-5" />
+        <HandshakeIcon sx={{ fontSize: 18 }} />
         {CTA_REVENDA}
       </a>
     </div>
