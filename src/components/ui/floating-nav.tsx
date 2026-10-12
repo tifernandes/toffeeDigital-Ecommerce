@@ -19,14 +19,14 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
     <motion.div
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
-      className={cn("flex items-center space-x-6", className)}
+      className={cn("flex items-center gap-1", className)}
     >
       {navItems.map((item) => (
         <motion.a
           key={item.name}
           href={item.link}
           onClick={item.onClick}
-          className="group relative px-4 py-2 text-blue-900 transition-colors hover:text-blue-700"
+          className="group relative whitespace-nowrap px-3 py-2 text-[15px] text-blue-900 transition-colors hover:text-blue-700"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
