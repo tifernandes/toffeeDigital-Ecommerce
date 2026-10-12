@@ -6,6 +6,7 @@ interface NavItem {
   name: string;
   link: string;
   icon?: React.ReactNode;
+  onClick?: () => void;
 }
 
 interface FloatingNavProps {
@@ -24,6 +25,7 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
         <motion.a
           key={item.name}
           href={item.link}
+          onClick={item.onClick}
           className="group relative px-4 py-2 text-blue-900 transition-colors hover:text-blue-700"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

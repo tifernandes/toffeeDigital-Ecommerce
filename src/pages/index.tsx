@@ -25,8 +25,11 @@ import {
 } from "lucide-react";
 import produtos from "@/dumDB/produtos";
 import VerticalSlider from "@/components/VerticalSlider";
+import Faq from "@/components/Faq";
 import Head from "next/head";
 import Link from "next/link";
+import { WHATSAPP_URL, CATALOGO_URL } from "@/lib/site";
+import { trackLeadConversion } from "@/lib/gtag";
 
 export default function Home() {
   // Group products by category
@@ -74,18 +77,21 @@ export default function Home() {
                 className="text-white space-y-6 md:space-y-8"
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                  Soluções para{" "}
-                  <span className="text-yellow-400">Colecionadores</span>{" "}
-                  Exigentes
+                  Fabricante de Deck Boxes, Cases e Expositores para{" "}
+                  <span className="text-yellow-400">TCG e Colecionáveis</span>
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl opacity-90 leading-relaxed">
-                  Expositores e cases de alta qualidade para proteger e valorizar
-                  sua coleção. Feitos por colecionadores, para colecionadores.
+                  Desenvolvemos produtos premium para lojistas, distribuidores e
+                  revendedores que buscam qualidade, inovação e excelente
+                  aceitação no mercado de colecionáveis.
+                </p>
+                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-yellow-400">
+                  Venda exclusiva para empresas com CNPJ.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 sm:pt-6">
-                  <a 
-                    href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m" 
-                    target="_blank" 
+                  <a
+                    href={CATALOGO_URL}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto"
                   >
@@ -97,8 +103,8 @@ export default function Home() {
                       <ChevronRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
                     </Button>
                   </a>
-                  
-                  <Link href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+
+                  <Link href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackLeadConversion()} className="w-full sm:w-auto">
                     <Button
                       size="lg"
                       className="w-full bg-transparent border-2 border-white text-white hover:bg-white/20 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 transition-colors"
@@ -135,13 +141,18 @@ export default function Home() {
                 className="text-center max-w-3xl mx-auto mb-16"
               >
                 <h2 className="text-4xl font-bold mb-6 text-blue-900">
-                  Sobre a The King of Boxes
+                  Seu Parceiro no Mercado de Colecionáveis
                 </h2>
                 <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8" />
+                <p className="text-xl text-gray-600 leading-relaxed mb-6">
+                  Com mais de 43 anos de experiência na transformação de
+                  plásticos, a The King of Boxes desenvolve e fabrica deck boxes,
+                  cases, expositores e acessórios para TCG e colecionáveis.
+                </p>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Somos uma empresa 100% nacional especializada em expositores
-                  para colecionáveis, com mais de 40 anos de experiência no
-                  mercado.
+                  Contamos com ferramentaria própria e produção própria,
+                  garantindo qualidade, padronização e fornecimento confiável
+                  para nossos parceiros comerciais.
                 </p>
               </motion.div>
 
@@ -397,6 +408,9 @@ export default function Home() {
             </div>
           </section>
 
+          {/* FAQ Section */}
+          <Faq />
+
           {/* Contact Section */}
           <section
             id="contato"
@@ -482,7 +496,7 @@ export default function Home() {
                   </div>
 
                   <div className="mt-6 sm:mt-8">
-                    <a href="https://wa.me/message/6FZ3YWIMM7XWF1" target="_blank" rel="noopener noreferrer">
+                    <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackLeadConversion()}>
                         <Button
                           size="lg"
                           className="w-full bg-green-600 hover:bg-green-700 text-base sm:text-lg py-4 sm:py-6"

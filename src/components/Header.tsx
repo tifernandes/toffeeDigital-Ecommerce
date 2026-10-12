@@ -21,6 +21,10 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { FloatingNav } from "@/components/ui/floating-nav";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import ConstructionIcon from "@mui/icons-material/Construction";
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import StorefrontIcon from "@mui/icons-material/Storefront";
+import { CTA_REVENDA, WHATSAPP_URL, CATALOGO_URL } from "@/lib/site";
+import { trackLeadConversion } from "@/lib/gtag";
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -147,9 +151,31 @@ const Header: React.FC = () => {
             </Link>
           </ListItem>
           <ListItem disablePadding>
+            <Link href="/parceiros" passHref style={{ width: "100%" }}>
+              <ListItemButton
+                component="a"
+                onClick={toggleDrawer(false)}
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "#1e3a8a",
+                    color: "white",
+                    "& .MuiListItemIcon-root": {
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <ListItemIcon>
+                  <StorefrontIcon />
+                </ListItemIcon>
+                <ListItemText primary="Parceiros" />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+          <ListItem disablePadding>
             <ListItemButton
               component="a"
-              href="https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m"
+              href={CATALOGO_URL}
               target="_blank"
               rel="noopener noreferrer"
               sx={{
@@ -171,9 +197,10 @@ const Header: React.FC = () => {
           <ListItem disablePadding>
             <ListItemButton
               component="a"
-              href="https://wa.me/message/6FZ3YWIMM7XWF1"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackLeadConversion()}
               sx={{
                 "&:hover": {
                   backgroundColor: "#1e3a8a",
@@ -190,13 +217,41 @@ const Header: React.FC = () => {
               <ListItemText primary="Fale Conosco" />
             </ListItemButton>
           </ListItem>
+          <Divider />
+          <ListItem disablePadding>
+            <ListItemButton
+              component="a"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackLeadConversion()}
+              sx={{
+                backgroundColor: "#facc15", // yellow-400
+                color: "#1e3a8a",
+                fontWeight: 700,
+                justifyContent: "center",
+                my: 1,
+                "&:hover": {
+                  backgroundColor: "#fde047", // yellow-300
+                },
+              }}
+            >
+              <ListItemIcon sx={{ minWidth: "auto", mr: 1, color: "#1e3a8a" }}>
+                <HandshakeIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary={CTA_REVENDA}
+                primaryTypographyProps={{ fontWeight: 700 }}
+              />
+            </ListItemButton>
+          </ListItem>
         </List>
       </SwipeableDrawer>
     </>
   );
 
   const DesktopMenu = () => (
-    <div className="hidden md:flex items-center space-x-6">
+    <div className="hidden md:flex items-center space-x-4">
       <FloatingNav
         navItems={[
           {
@@ -210,17 +265,33 @@ const Header: React.FC = () => {
             icon: <ConstructionIcon className="h-5 w-5" />,
           },
           {
+            name: "Parceiros",
+            link: "/parceiros",
+            icon: <StorefrontIcon className="h-5 w-5" />,
+          },
+          {
             name: "Baixar Catálogo",
-            link: "https://drive.google.com/drive/folders/1W8OrQW2SaWFxaayOYQVQmyIWZ33fuV_m",
+            link: CATALOGO_URL,
             icon: <FileDownloadIcon className="h-5 w-5" />,
           },
           {
             name: "Fale Conosco",
-            link: "https://wa.me/message/6FZ3YWIMM7XWF1",
+            link: WHATSAPP_URL,
             icon: <FileDownloadIcon className="h-5 w-5" />,
+            onClick: () => trackLeadConversion(),
           },
         ]}
       />
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => trackLeadConversion()}
+        className="inline-flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-bold text-blue-900 shadow-sm transition-colors hover:bg-yellow-300"
+      >
+        <HandshakeIcon className="h-5 w-5" />
+        {CTA_REVENDA}
+      </a>
     </div>
   );
 
