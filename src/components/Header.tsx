@@ -1,28 +1,20 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/components/Header.module.css";
 import Image from "next/image";
-import BusinessIcon from "@mui/icons-material/Business";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Link from "next/link";
 import { styled, useTheme } from "@mui/material/styles";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Divider from "@mui/material/Divider";
-import { Button } from "@mui/material";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { FloatingNav } from "@/components/ui/floating-nav";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
-import ConstructionIcon from "@mui/icons-material/Construction";
-import HandshakeIcon from "@mui/icons-material/Handshake";
-import StorefrontIcon from "@mui/icons-material/Storefront";
 import { CTA_REVENDA, WHATSAPP_URL, CATALOGO_URL } from "@/lib/site";
 import { trackLeadConversion } from "@/lib/gtag";
 
@@ -68,6 +60,13 @@ const Header: React.FC = () => {
     justifyContent: "flex-start",
   }));
 
+  const drawerItemSx = {
+    "&:hover": {
+      backgroundColor: "#1e3a8a",
+      color: "white",
+    },
+  };
+
   const MobileMenu = () => (
     <>
       <IconButton
@@ -75,9 +74,7 @@ const Header: React.FC = () => {
         aria-label="open drawer"
         edge="end"
         onClick={toggleDrawer(true)}
-        sx={{
-          color: "#1e3a8a", // blue-900
-        }}
+        sx={{ color: "#1e3a8a" }}
       >
         <MenuIcon />
       </IconButton>
@@ -112,19 +109,8 @@ const Header: React.FC = () => {
               <ListItemButton
                 component="a"
                 onClick={toggleDrawer(false)}
-                sx={{
-                  "&:hover": {
-                    backgroundColor: "#1e3a8a",
-                    color: "white",
-                    "& .MuiListItemIcon-root": {
-                      color: "white",
-                    },
-                  },
-                }}
+                sx={drawerItemSx}
               >
-                <ListItemIcon>
-                  <BusinessIcon />
-                </ListItemIcon>
                 <ListItemText primary="Sobre nós" />
               </ListItemButton>
             </Link>
@@ -134,19 +120,8 @@ const Header: React.FC = () => {
               <ListItemButton
                 component="a"
                 onClick={toggleDrawer(false)}
-                sx={{
-                  "&:hover": {
-                    backgroundColor: "#1e3a8a",
-                    color: "white",
-                    "& .MuiListItemIcon-root": {
-                      color: "white",
-                    },
-                  },
-                }}
+                sx={drawerItemSx}
               >
-                <ListItemIcon>
-                  <ConstructionIcon />
-                </ListItemIcon>
                 <ListItemText primary="Como Trabalhamos" />
               </ListItemButton>
             </Link>
@@ -156,19 +131,8 @@ const Header: React.FC = () => {
               <ListItemButton
                 component="a"
                 onClick={toggleDrawer(false)}
-                sx={{
-                  "&:hover": {
-                    backgroundColor: "#1e3a8a",
-                    color: "white",
-                    "& .MuiListItemIcon-root": {
-                      color: "white",
-                    },
-                  },
-                }}
+                sx={drawerItemSx}
               >
-                <ListItemIcon>
-                  <StorefrontIcon />
-                </ListItemIcon>
                 <ListItemText primary="Parceiros" />
               </ListItemButton>
             </Link>
@@ -179,19 +143,8 @@ const Header: React.FC = () => {
               href={CATALOGO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              sx={{
-                "&:hover": {
-                  backgroundColor: "#1e3a8a",
-                  color: "white",
-                  "& .MuiListItemIcon-root": {
-                    color: "white",
-                  },
-                },
-              }}
+              sx={drawerItemSx}
             >
-              <ListItemIcon>
-                <FileDownloadIcon />
-              </ListItemIcon>
               <ListItemText primary="Baixar Catálogo" />
             </ListItemButton>
           </ListItem>
@@ -202,19 +155,8 @@ const Header: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackLeadConversion()}
-              sx={{
-                "&:hover": {
-                  backgroundColor: "#1e3a8a",
-                  color: "white",
-                  "& .MuiListItemIcon-root": {
-                    color: "white",
-                  },
-                },
-              }}
+              sx={drawerItemSx}
             >
-              <ListItemIcon>
-                <FileDownloadIcon />
-              </ListItemIcon>
               <ListItemText primary="Fale Conosco" />
             </ListItemButton>
           </ListItem>
@@ -237,12 +179,9 @@ const Header: React.FC = () => {
                 },
               }}
             >
-              <ListItemIcon sx={{ minWidth: "auto", mr: 1, color: "#1e3a8a" }}>
-                <HandshakeIcon />
-              </ListItemIcon>
               <ListItemText
                 primary={CTA_REVENDA}
-                primaryTypographyProps={{ fontWeight: 700 }}
+                primaryTypographyProps={{ fontWeight: 700, textAlign: "center" }}
               />
             </ListItemButton>
           </ListItem>
@@ -271,32 +210,29 @@ const Header: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackLeadConversion()}
-        className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-lg bg-yellow-400 px-4 py-2 text-sm font-bold text-blue-900 shadow-sm transition-colors hover:bg-yellow-300"
+        className="inline-flex items-center whitespace-nowrap rounded-lg bg-yellow-400 px-4 py-2 text-sm font-bold text-blue-900 shadow-sm transition-colors hover:bg-yellow-300"
       >
-        <HandshakeIcon sx={{ fontSize: 18 }} />
         {CTA_REVENDA}
       </a>
     </div>
   );
 
   const HeaderCmp: React.FC = () => (
-    <BackgroundGradient className="container mx-auto px-4 flex items-center justify-between h-full bg-white/80 backdrop-blur-sm">
-      <div className={styles.logo}>
-        <Link href="/">
-          <Image
-            className={styles.logoImg}
-            alt="logo"
-            src="/logo.png"
-            width={137}
-            height={61}
-            priority
-          />
-        </Link>
-      </div>
+    <div className="container mx-auto px-4 flex items-center justify-between h-full">
+      <Link href="/" className="flex items-center">
+        <Image
+          className={styles.logoImg}
+          alt="logo"
+          src="/logo.png"
+          width={137}
+          height={61}
+          priority
+        />
+      </Link>
       <nav className="flex items-center">
         {isMobile ? <MobileMenu /> : <DesktopMenu />}
       </nav>
-    </BackgroundGradient>
+    </div>
   );
 
   return (

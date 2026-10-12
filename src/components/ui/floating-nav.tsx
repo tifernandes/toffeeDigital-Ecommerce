@@ -26,7 +26,7 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
           key={item.name}
           href={item.link}
           onClick={item.onClick}
-          className="group relative whitespace-nowrap px-3 py-2 text-[15px] text-blue-900 transition-colors hover:text-blue-700"
+          className="group relative whitespace-nowrap px-3 py-2 text-sm font-medium text-blue-900 transition-colors hover:text-blue-700"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

@@ -108,12 +108,12 @@ const Footer: React.FC = () => {
       <div className="border-t border-blue-800">
         <div className="container mx-auto px-4 py-4">
           <p className="text-center text-sm text-gray-400 hover:text-white transition-colors">
-            <a 
-              href="https://www.linkedin.com/in/tiago-fernandes-dev/"
+            <a
+              href="https://toffeedigital.com.br"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Developed by devtoffee
+              Toffee Digital
             </a>
           </p>
         </div>
