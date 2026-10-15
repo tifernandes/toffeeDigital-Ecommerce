@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Image from "next/image";
 import {
   BadgeCheck,
   Handshake,
@@ -11,17 +10,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { CTA_REVENDA, WHATSAPP_URL, CATALOGO_URL } from "@/lib/site";
 import { trackLeadConversion } from "@/lib/gtag";
-
-// TODO(TKB): grid de logos + nomes dos parceiros. O cliente ainda não enviou.
-// Preencher este array (name, logo e url opcional). O grid se ajusta sozinho.
-type Partner = { name: string; logo: string; url?: string };
-
-const partners: Partner[] = [
-  { name: "Parceiro 1", logo: "" },
-  { name: "Parceiro 2", logo: "" },
-  { name: "Parceiro 3", logo: "" },
-  { name: "Parceiro 4", logo: "" },
-];
 
 const presencaNacional = [
   "Fabricação própria",
@@ -123,46 +111,6 @@ const Parceiros = () => {
                   distribuidores e revendedores que levam os produtos The King of
                   Boxes para colecionadores de todo o Brasil.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
-                  Abaixo você encontrará algumas das empresas que confiam em nossa
-                  marca e comercializam nossos produtos.
-                </p>
-
-                {/* TODO(TKB): substituir placeholders pelos logos/nomes reais dos parceiros */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {partners.map((partner, index) => {
-                    const card = (
-                      <div className="flex h-28 w-full items-center justify-center rounded-xl border border-dashed border-gray-300 bg-white p-4 transition-shadow hover:shadow-md">
-                        {partner.logo ? (
-                          <Image
-                            src={partner.logo}
-                            alt={partner.name}
-                            width={140}
-                            height={70}
-                            className="max-h-16 w-auto object-contain"
-                          />
-                        ) : (
-                          <span className="text-center text-sm font-medium text-gray-400">
-                            {partner.name}
-                          </span>
-                        )}
-                      </div>
-                    );
-
-                    return partner.url ? (
-                      <a
-                        key={index}
-                        href={partner.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {card}
-                      </a>
-                    ) : (
-                      <div key={index}>{card}</div>
-                    );
-                  })}
-                </div>
               </div>
 
               {/* Presença Nacional */}

@@ -136,6 +136,8 @@ const SobreNos = () => {
               </h2>
               <ul className="grid md:grid-cols-2 gap-4 mb-8">
                 {[
+                  "Deck box para TCG",
+                  "Toploaders para TCG",
                   "Expositores/ cases para miniaturas de carros escala 1:64",
                   "Expositores/ cases para miniaturas de carros escala 1:43",
                   "Expositores/ cases para miniaturas de carros escala 1:38",
