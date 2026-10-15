@@ -77,7 +77,7 @@ export default function Home() {
                 className="text-white space-y-6 md:space-y-8"
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                  Fabricante de Deck Boxes, Cases e Expositores para{" "}
+                  Fabricante de Deck Boxes, Cases, Expositores e Acessórios para{" "}
                   <span className="text-yellow-400">TCG e Colecionáveis</span>
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl opacity-90 leading-relaxed">
